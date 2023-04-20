@@ -1,70 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>nidea</title>
-        <link rel="stylesheet" href="./css/estilos.css">
-        <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-
-        <header>
-
-            <div class="boxLogo"> 
-                <img src="./assets/img/logofinal.jpg" alt="nidea" width="130px">
+<body>
+    
+    <header class="header container-fluid">    
+        <section class="row">
+            <div class="col-md-6 col-sm-12 d-flex align-content-first header__contenedorLogo">
+                <img src="./assets/img/logo.jpg" alt="logo">
             </div>
-
-            <nav>
-
-                <ul>
-                    <div class="boxInicio">
-                    <li class="linkNav"><a class="linkNav" href="#">Inicio</a></li>
-                    <li class="linkNav"><a class="linkNav" href="./pages/Ilustración.html">Ilustración</a></li>
-                    <li class="linkNav"><a class="linkNav" href="./pages/Serigrafía.html">Serigrafía</a></li>
-                    <li class="linkNav"><a class="linkNav" href="./pages/Tatuajes.html">Tatuajes</a></li>
-                    <li class="linkNav"><a class="linkNav" href="./pages/Contacto.html">Contacto</a></li>
+            <nav class="col-md-6 col-sm-12 d-flex justify-content-end navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="./pages/Ilustración.html">Ilustración</a>
+                            <a class="nav-link" href="./pages/Serigrafía.html">Serigrafía</a>
+                            <a class="nav-link" href="./pages/Tatuajes.html">Tatuajes</a>
+                            <a class="nav-link" href="./pages/Contacto.html">Contacto</a>                       
+                        </div>
                     </div>
-                </ul>
-
-                <hr>
+                </div>
             </nav>
-
-        </header>
-
-        <main class="fondo">
-
-            <div class="boxImg">
-                <img class="contenedorImg" src="./assets/img/rana.jpg" alt="nidea" width="200" height="200">
-            </div>
-            <div class="boxSobremi">
-                <h2>Un poco sobre mi</h2>
-                <br>
-                <p>Soy una artista visual con local en Montevideo, Uruguay. 
-                    <br>
-                    Especializandome en diseño gráfico me gusta trabajar con ilustración, serigrafía y también diseñando y realizando tatuajes en mi estudio.
-                    <br>
+        </section>            
+    </header>
+    <main class="main conteiner">
+        <section class="row">
+            <div id="carouselExampleIndicators" class="col-md-12 col-sm-12 carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" style="height: 500px; width: 100%;">
+                <div class="carousel-item active">
+                    <img src="./assets/img/muerte.jpg" class="d-block w-100" alt="carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carrudos.jpg" class="d-block w-100" alt="carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/carrutres.JPG" class="d-block w-100" alt="carrusel">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>      
+            <div class="col-sm-12 col-md-12 contenedorCentrar d-flex justify-content-center">
+                <h1>INICIO</h1>    
+            </div>   
+            <div class="col-sm-12 col-md-12 main__contenedorImg d-flex justify-content-center">
+                <img src="./assets/img/rana.jpg" alt="logo" width="150px" height="150px">   
+            </div>    
+            <div class="col-sm-12 col-md-12 main__contenedorSobremi d-flex justify-content-center">
+                <h2>SOBRE MI</h2>
+                <p class="main__contenedorSobremi__parrafo">Soy una artista visual con local en Montevideo, Uruguay.
+                    Especializándome en diseño gráfico me gusta trabajar con ilustración, serigrafía y también diseñando y realizando tatuajes en mi estudio.
                     Te invito a ver mi contenido y a contactarte conmigo por cualquier consulta
                 </p>
-
+            </div> 
+        </section>    
+        <section class="row">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/seriuno.png" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">SERIGRAFÍA</h5>
+                        <a class="d-flex justify-content-center" href="./pages/serigrafia.html" class="btn btn-primary">Ir a la página</a>
+                    </div>
+                </div>
             </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/carddos.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">ILUSTRACIÓN</h5>
+                        <a class="d-flex justify-content-center" href="./pages/ilustracion.html" class="btn btn-primary">Ir a la página</a>
+                    </div>
+                </div>  
+            </div>   
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/img/tatuuno.jpg" class="card-img-top" alt="card">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center">TATUAJES</h5>
+                        <a class="d-flex justify-content-center" href="./pages/tatuajes.html" class="btn btn-primary">Ir a la página</a>
+                    </div>
+                </div>  
+            </div>   
+        </section>
+    </main>
 
+    <footer class="footer conteiner-fluid">
+        <div class="footer__boxIcon">
+            <a class="footer__boxIcon__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+            <a class="footer__boxIcon__icon" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a>
+            <a class="footer__boxIcon__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #050505;"></i></a>
+        </div>
+    </footer>
 
-        </main>
-
-        <footer>
-
-            <hr>
-            <div class="boxIcon">
-            <a class="icon" href="https://www.instagram.com/__nidea.__/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-            <a class="icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
-            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </footer>
-
-    </body>
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

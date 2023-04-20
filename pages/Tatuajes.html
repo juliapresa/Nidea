@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>nidea</title>
-        <link rel="stylesheet" href="../css/estilos.css">
-        <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div>
-                <img src="../assets/img/logofinal.jpg" alt="nidea" width="130px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatuajes</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header container-fluid">
+        <section class="row">
+        <div class="col-md-6 col-sm-12 d-flex align-content-first header__contenedorLogo">
+            <img src="../assets/img/logo.jpg" alt="logo">
+        </div>
+        <nav class="col-md-6 col-sm-12 d-flex justify-content-end navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tatuajes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="./ilustración.html">Ilustración</a>
+                    <a class="nav-link" href="./serigrafía.html">Serigrafía</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>                       
+                </div>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <div class="boxInicio">
-                    <li class="linkNav"><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li class="linkNav"><a class="linkNav" href="../pages/Ilustración.html">Ilustración</a></li>
-                    <li class="linkNav"><a class="linkNav" href="Serigrafía.html">Serigrafía</a></li>
-                    <li class="linkNav"><a class="linkNav" href="#">Tatuajes</a></li>
-                    <li class="linkNav"><a class="linkNav" href="Contacto.html">Contacto</a></li>
-                    </div>
-
-            
-                </ul>
-                <hr>
-            </nav>
-
-        </header>
-        <main class="fondo">
-            <div class="boxTres">
-            <h1 class="centrar">TATUAJES</h1>
+        </nav>  
+        </section>            
+    </header>
+    <main class="main">
+        <section class="row">
+        <div class="col-sm-12 col-md-12 contenedorCentrar d-flex justify-content-center">
+            <h1>TATUAJES</h1>
+        </div>
+        </section>
+        <div class="main__contenedorGaleria">
+            <img class="main__contenedorGaleria__ImgTatu" src="../assets/img/tatuuno.jpg" alt="tatuajes">
+            <img class="main__contenedorGaleria__ImgTatu" src="../assets/img/tatudos.jpg" alt="tatuajes">
+            <img class="main__contenedorGaleria__ImgTatu" src="../assets/img/tatutres.jpg" alt="tatuajes">
+            <img class="main__contenedorGaleria__ImgTatu" src="../assets/img/tatucuatro.JPG" alt="tatuajes">
+        </div>
+        <section class="row">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center main__boxVideo">      
+                <p class="fs-4">Te dejo un video de como curar los tatuajes apropiadamente para que puedas verlo siempre que necesites</p>
             </div>
-            <img class="boxTatus" src="../assets/img/IMG_1502.JPG" alt="nidea" width="250" height="250">
-            <img class="boxTatus" src="../assets/img/tatuaje.jpg" alt="nidea" width="250" height="250">
-            <img class="boxTatus" src="../assets/img/Tatu Lucas.jpg" alt="nidea" width="250" height="250">
-            <img class="boxTatus" src="../assets/img/PHOTO-2023-02-10-14-50-49.jpg" alt="nidea" width="250" height="250">
-            <div class="boxVideo">
-                <h2>Te dejo un video de como curar los tatuajes apropiadamente para que puedas verlo siempre que necesites</h2>
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center main__boxVideo">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5AG-gSWnlKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
             </div>
-
-        </main>
-        <footer>
-            <hr>
-            <div class="boxIcon">
-            <a class="icon" href="https://www.instagram.com/__nidea.__/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-            <a class="icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
-            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-
-        </footer>
-
-    </body>
+        </section>
+    </main>
+    <footer class="footer conteiner-fluid">
+        <div class="footer__boxIcon">
+            <a class="footer__boxIcon__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+            <a class="footer__boxIcon__icon" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a>
+            <a class="footer__boxIcon__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #050505;"></i></a>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
