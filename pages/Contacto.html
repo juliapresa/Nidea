@@ -13,35 +13,39 @@
 <body>
     <header class="header container-fluid">
         <section class="row">
-            <div class="col-md-6 col-sm-12 d-flex align-content-first header__contenedorLogo">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center header__contenedorLogo">
                 <img src="../assets/img/logo.jpg" alt="logo">
             </div>
-            <nav class="col-md-6 col-sm-12 d-flex justify-content-end navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center"">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Contacto</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                            <a class="nav-link" href="./ilustración.html">Ilustración</a>
-                            <a class="nav-link" href="./serigrafía.html">Serigrafía</a>
-                            <a class="nav-link" href="./tatuajes.html">Tatuajes</a>                     
-                        </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./Ilustración.html">Ilustración</a>
+                        <a class="nav-link" href="./Serigrafía.html">Serigrafía</a>
+                        <a class="nav-link" href="./Tatuajes.html">Tatuajes</a>                       
+                    </div>
                     </div>
                 </div>
-            </nav> 
-        </section>
+            </nav>
+            </div>
+            </section>  
     </header>
     <main class="mainContacto conteiner">
-        <section class="row">
-            <div class="col-sm-12 col-md-12 contenedorCentrar d-flex justify-content-center">
-                <h1>CONTACTO</h1>
-            </div>
+        <div class="main__titulos col-md-12 col-sm-12 d-flex justify-content-center">
+            <img class="main__titulos__tamaño" src="../assets/img/CONTACTO-05.png" alt="titulo">
+        </div>
+        <div class="col-sm-12 col-md-12 contenedorCentrar d-flex justify-content-center">
+            <h1>Por cualquier consulta, ¡comunicate!</h1>
+        </div>
+        <section class="row main__sectionContacto">
             <form class="col-md-6 col-sm-12 d-flex justify-content-center">
                 <div class="main__boxForm">
-                    <p>Por cualquier consulta, ¡comunicate!</p>
                     <input type="text" placeholder="ingresa tu nombre" required>
                     <input type="mail" placeholder="ingresa tu mail" required>
                     <textarea cols="30" rows="10" placeholder="escribe tu mensaje" required></textarea>
@@ -57,10 +61,22 @@
     </main>
         
     <footer class="footer conteiner-fluid">
-        <div class="footer__boxIcon">
-            <a class="footer__boxIcon__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-            <a class="footer__boxIcon__icon" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a>
-            <a class="footer__boxIcon__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #050505;"></i></a>
+        <div class="footer__logo col-md-12 col-sm-12 d-flex justify-content-center">
+            <img src="../assets/img/logo.jpg" alt="logo">
+        </div>
+        <div class="footer__datos col-md-6 col-md-12 d-flex flex-column align-items-center">
+            <p>juliapresabosco@gmail.com</p>
+            <p>Cordón</p>
+            <p>Montevideo, Uruguay</p>
+            <p>+598 99 795 616</p>
+        </div>
+        <div class="footer__boxIcon__uno col-md-12 col-sm-12 d-flex justify-content-center">
+            <a class="footer__boxIcon__uno__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__uno__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #766e6e;"></i></a> 
+        </div>
+            <div class="footer__boxIcon__dos">
+           <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a> 
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>

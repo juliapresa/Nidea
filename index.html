@@ -15,10 +15,11 @@
     
     <header class="header container-fluid">    
         <section class="row">
-            <div class="col-md-6 col-sm-12 d-flex align-content-first header__contenedorLogo">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center header__contenedorLogo">
                 <img src="./assets/img/logo.jpg" alt="logo">
             </div>
-            <nav class="col-md-6 col-sm-12 d-flex justify-content-end navbar navbar-expand-lg navbar-light bg-light">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +34,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </nav>
         </section>            
     </header>
     <main class="main conteiner">
+        <div class="main__titulos col-md-12 col-sm-12 d-flex justify-content-center">
+        <img class="main__titulos__tamaño" src="./assets/img/INICIO-02.png" alt="titulo">
+        </div>
         <section class="row">
             <div id="carouselExampleIndicators" class="col-md-12 col-sm-12 carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -63,22 +68,16 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
                 </button>
-            </div>      
-            <div class="col-sm-12 col-md-12 contenedorCentrar d-flex justify-content-center">
-                <h1>INICIO</h1>    
-            </div>   
-            <div class="col-sm-12 col-md-12 main__contenedorImg d-flex justify-content-center">
-                <img src="./assets/img/rana.jpg" alt="logo" width="150px" height="150px">   
-            </div>    
+            </div>  
             <div class="col-sm-12 col-md-12 main__contenedorSobremi d-flex justify-content-center">
-                <h2>SOBRE MI</h2>
+                <h1>SOBRE MI</h1>
                 <p class="main__contenedorSobremi__parrafo">Soy una artista visual con local en Montevideo, Uruguay.
                     Especializándome en diseño gráfico me gusta trabajar con ilustración, serigrafía y también diseñando y realizando tatuajes en mi estudio.
                     Te invito a ver mi contenido y a contactarte conmigo por cualquier consulta
                 </p>
-            </div> 
+            </div>     
         </section>    
-        <section class="row">
+        <section class="row main__cards">
             <div class="col-md-4 col-sm-12 d-flex justify-content-center">
                 <div class="card" style="width: 18rem;">
                     <img src="./assets/img/seriuno.png" class="card-img-top" alt="card">
@@ -107,13 +106,36 @@
                 </div>  
             </div>   
         </section>
+
+        <div class="main__contenedorGaleriaInicio">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/galeriainicio.jpg" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/galeriainiciodos.jpg" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/galeriainiciotres.png" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/galeriainiciocuatro.png" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/galeriainiciocinco.jpg" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/galeriainicioseis.jpg" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/ilusuno.PNG" alt="galeria">
+            <img class="main__contenedorGaleria__imgInicio" src="./assets/img/IMG_1657.JPG" alt="galeria">
+        </div>
     </main>
 
     <footer class="footer conteiner-fluid">
-        <div class="footer__boxIcon">
-            <a class="footer__boxIcon__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
-            <a class="footer__boxIcon__icon" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a>
-            <a class="footer__boxIcon__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #050505;"></i></a>
+        <div class="footer__logo col-md-12 col-sm-12 d-flex justify-content-center">
+        <img src="./assets/img/logo.jpg" alt="logo">
+        </div>
+        <div class="footer__datos col-md-6 col-md-12 d-flex flex-column align-items-center">
+            <p>juliapresabosco@gmail.com</p>
+            <p>Cordón</p>
+            <p>Montevideo, Uruguay</p>
+            <p>+598 99 795 616</p>
+        </div>
+        <div class="footer__boxIcon__uno col-md-12 col-sm-12 d-flex justify-content-center">
+            <a class="footer__boxIcon__uno__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__uno__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #766e6e;"></i></a> 
+        </div>
+            <div class="footer__boxIcon__dos">
+           <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a> 
         </div>
     </footer>
 
