@@ -8,24 +8,27 @@
 body{
     font-family: 'Castoro Titling', cursive;
 }
+
+/*header*/
 .header{
     border: 1px, solid, black;
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: white
+    background-color: white;
 }
-.header__contenedorLogo{
+.contenedorLogo{
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.main__titulos__tamaño{
+/*mains*/
+.titulos__tamaño{
     width: 600px;
     height: 600px;
 }
 
-.main__contenedorSobremi{
+.contenedorSobremi{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +39,7 @@ body{
     margin-top: 15%;
 }
 
-.main__contenedorSobremi__parrafo{
+.contenedorSobremi__parrafo{
     width: 50%;
     height: 50%;
     align-content: center;
@@ -48,16 +51,16 @@ body{
     margin-top: 5%;
 
 }
-.main__cards{
+.cards{
     margin-bottom: 15%;
 }
 
-.main__contenedorGaleria{
+.contenedorGaleria{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.main__contenedorGaleria__ImgIlu{
+.ImgIlu{
     width: 400px;
     height: 400px;
     object-fit: cover;
@@ -65,40 +68,40 @@ body{
     margin-top:10px;
     border-radius: 20px;
 }
-.main__contenedorGaleria__ImgSeri{
+.ImgSeri{
     object-fit: cover;
     margin-top: 10px;
     width: 450px;
     height:450px;
     margin-bottom: 10%;
 }
-.main__contenedorGaleria__ImgTatu{
+.ImgTatu{
     width: 300px;
     height: 300px;
     margin-top: 5%;
 }
-.main__contenedorGaleriaInicio{
+.contenedorGaleriaInicio{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.main__contenedorGaleria__imgInicio{
+.imgInicio{
     width: 300px;
     height: 300px;
     object-fit: cover;   
     margin-top:10px;
 }
 
-.main__tatuajes{
+.colorpink{
     background-color: pink;
 }
 .list-group-item{
     background-color: pink;
 }
-.main__cardCuidados{
+.cardCuidados{
     margin-top: 15%;
 }
-.main__cardCuidados__parrafo{
+.cardCuidados__parrafo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +109,7 @@ body{
     text-align: center;
     height: fit-content;
 }
-.main__nohacer{
+.nohacer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,7 +118,7 @@ body{
     margin-top: 15%;
     background-image: url(../assets/img/hghghghg.jpeg);
 }
-.main__Videoparrafo{
+.videoParrafo{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,16 +129,16 @@ body{
     margin-top: 15%;
 }
 
-.main__boxVideo{
+.boxVideo{
     text-align: center;
     margin-top: 5%;
 }
-.main__seriTamaño{
+.seriTamaño{
     width: 200px;
     height: 300px;
 }
 
-.main__textos{
+.textos{
     margin-top: 5%;
     margin-bottom: 15%;
     font-size: large;
@@ -144,7 +147,7 @@ body{
     margin-right: 5%;
 }
 
-.main__boxForm{
+.boxForm{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -152,42 +155,40 @@ body{
     margin-top: 15%;
     margin-bottom: 5%;
 }
-.main__boxMap{
+.boxMap{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.main__sectionContacto{
+.sectionContacto{
     background-image: url(../assets/img/hghghghg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.mainContacto{
-    background-color: white;
-}
-.main__cardCuidados{
-    margin-bottom: 2%;
-}
-.footer__boxIcon__uno{
+
+
+/*footer*/
+.boxIcon__uno{
     font-size: 3rem;
 }
-.footer__boxIcon__dos{
+.boxIcon__dos{
     display: inline-block;
     position: fixed;
     right: 0%;
     bottom: 0%;
 }
-.footer__boxIcon__icon__dos{
+.boxIcon__icon__dos{
     font-size: 3rem;
     display: inline-block;
 }
 
-.footer__logo{
+.logo{
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
+/*general*/
 .contenedorCentrar{
     margin-top: 5%;
 }

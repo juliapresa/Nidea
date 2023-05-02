@@ -1,0 +1,29 @@
+main{
+    .titulos__tamaño{
+        width: 600px;
+        height: 600px;
+    }
+    .contenedorCentrar{
+        margin-top: 5%;
+    }
+    .sectionContacto{
+        background-image: url(../assets/img/hghghghg.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .boxForm{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 15%;
+            margin-bottom: 5%;
+        }
+        .boxMap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}

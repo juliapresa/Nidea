@@ -1,7 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+}
+
+main .titulos__tamaño {
+  width: 600px;
+  height: 600px;
+}
+main .contenedorSobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 15%;
+  margin-top: 15%;
+}
+main .contenedorSobremi .contenedorSobremi__parrafo {
+  width: 50%;
+  height: 50%;
+  align-content: center;
+  font-size: larger;
+  margin-top: 2%;
+}
+main .cards {
+  margin-bottom: 15%;
+}
+main .contenedorGaleriaInicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .contenedorGaleriaInicio .imgInicio {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+main .titulos__tamaño {
+  width: 600px;
+  height: 600px;
+}
+main .contenedorLogo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+main .textos {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  font-size: large;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+main .contenedorGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .contenedorGaleria .ImgIlu {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border: 1px black solid;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+main .titulos__tamaño {
+  width: 600px;
+  height: 600px;
+}
+main .textos {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  font-size: large;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+main .seriTamaño {
+  width: 200px;
+  height: 300px;
+}
+main .contenedorGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .contenedorGaleria .ImgSeri {
+  object-fit: cover;
+  margin-top: 10px;
+  width: 450px;
+  height: 450px;
+  margin-bottom: 10%;
+}
+
+main {
+  background-color: pink;
+}
+main .titulos__tamaño {
+  width: 600px;
+  height: 600px;
+}
+main .contenedorGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .contenedorGaleria .ImgTatu {
+  width: 300px;
+  height: 300px;
+  margin-top: 5%;
+}
+main .cardCuidados {
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+main .cardCuidados .cardCuidados__parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  height: fit-content;
+}
+main .listaItem {
+  background-color: pink;
+}
+main .nohacer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  margin-top: 15%;
+  background-image: url(../assets/img/hghghghg.jpeg);
+}
+main .nohacer .listaItem {
+  background-color: pink;
+}
+main .boxVideo {
+  text-align: center;
+  margin-top: 5%;
+}
+main .boxVideo .videoParrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  height: fit-content;
+  font-size: large;
+  margin-top: 15%;
+}
+
+main .titulos__tamaño {
+  width: 600px;
+  height: 600px;
+}
+main .contenedorCentrar {
+  margin-top: 5%;
+}
+main .sectionContacto {
+  background-image: url(../assets/img/hghghghg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .sectionContacto .boxForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+main .sectionContacto .boxMap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  border: 1px, solid, black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+header .contenedorLogo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+footer .logo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+footer .boxIcon__uno {
+  font-size: 3rem;
+}
+footer .boxIcon__dos {
+  display: inline-block;
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+}
+footer .boxIcon__icon__dos {
+  font-size: 3rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */

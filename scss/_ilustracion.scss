@@ -1,0 +1,31 @@
+main{
+    .titulos__tamaño{
+        width: 600px;
+        height: 600px;
+    }
+    .contenedorLogo{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .textos{
+        margin-top: 5%;
+        margin-bottom: 15%;
+        font-size: large;
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    .contenedorGaleria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .ImgIlu{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 1px black solid;
+            margin-top:10px;
+            border-radius: 20px;
+        }
+    }
+}
