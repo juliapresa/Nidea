@@ -1,50 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>nidea</title>
-        <link rel="stylesheet" href="../css/estilos.css">
-        <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div>
-                <img src="../assets/img/logofinal.jpg" alt="nidea" width="130px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serigrafía</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header container-fluid">
+        <section class="row">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center header__contenedorLogo">
+                <img src="../assets/img/logo.jpg" alt="logo">
             </div>
-            <nav>
-                <ul>
-                    <div class="boxInicio">
-                    <li class="linkNav"><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li class="linkNav"><a class="linkNav" href="../pages/Ilustración.html">Ilustración</a></li>
-                    <li class="linkNav"><a class="linkNav" href="#">Serigrafía</a></li>
-                    <li class="linkNav"><a class="linkNav" href="Tatuajes.html">Tatuajes</a></li>
-                    <li class="linkNav"><a class="linkNav" href="Contacto.html">Contacto</a></li>
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center"">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Serigrafía</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./Ilustración.html">Ilustración</a>
+                        <a class="nav-link" href="./tatuajes.html">Tatuajes</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>                       
                     </div>
-
-            
-                </ul>
-                <hr>
+                    </div>
+                </div>
             </nav>
-
-        </header>
-        <main class="fondo">
-            <div class="boxTres">
-            <h1 class="centrar">SERIGRAFÍA</H1>
             </div>
-            <img src="../assets/img/Bolsa 1.png" alt="nidea" width="250" height="250">
+            </section>
+    </header>
+    <main class="main">
+        <div class="main__titulos col-md-12 col-sm-12 d-flex justify-content-center">
+            <img class="main__titulos__tamaño" src="../assets/img/SERIGRAFIA.png" alt="titulo">
+        </div>
+        <section class="row">
+        <div class="main__textos text-center col-md-9 col-sm-12 d-flex justify-content-center flex-column">
+            <h1>técnica</h1> 
+            <p>La serigrafía es una técnica de impresión que transfiere tinta o pintura a través de un marco de metal o madera con una malla tensada de nailon.</p>
+            <p>Usando esta técnica diseño una variedad de prendas de ropa como bolsas, remeras, entre otras.</p>
+        </div>
+        <div class="col-md-3 col-sm-12 d-flex justify-content-center">
+        <img class="main__seriTamaño" src="../assets/img/serigradfia.PNG" alt="imagen">
+        </div>
+        </section>
+        <section class="row col-md-12 col-sm-12 d-flex d-flex justify-content-center">
+        <div class="main__textos text-center">
+            <h2>un poco de historia</h2> 
+            <p>El nacimiento de la pantalla de serigrafía moderna tuvo lugar en Reino Unido hacia mediados del siglo XIX, la cual presentaba ya un marco de madera con una tela de seda tensada sobre él. En origen, estos avances se implantaron únicamente en el ámbito de la industria textil para la decoración de telas.</p>
+        </div>
+        </section>
+        <section class="row">
+        <div class="main__contenedorGaleria col-md-12 col-sm-12 d-flex justify-content-evenly">
+            <img class="main__contenedorGaleria__ImgSeri" src="../assets/img/seriuno.png" alt="nidea">
+            <img class="main__contenedorGaleria__ImgSeri" src="../assets/img/seridos.png" alt="nidea">
+        </div> 
+        <div class="main__contenedorGaleria col-md-12 col-sm-12 d-flex justify-content-evenly"> 
+            <img class="main__contenedorGaleria__ImgSeri" src="../assets/img/seritres.png" alt="nidea">
+            <img class="main__contenedorGaleria__ImgSeri" src="../assets/img/sericuatro.png" alt="nidea">
+        </div> 
+        </section>
+    </main>
 
-        </main>
-        <footer>
-            <hr>
-            <div class="boxIcon">
-            <a class="icon" href="https://www.instagram.com/__nidea.__/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-            <a class="icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
-            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-
-        </footer>
-
-    </body>
+    <footer class="footer">
+        <div class="footer__logo col-md-12 col-sm-12 d-flex justify-content-center">
+            <img src="../assets/img/logo.jpg" alt="logo">
+        </div>
+        <div class="footer__datos col-md-6 col-md-12 d-flex flex-column align-items-center">
+            <p>juliapresabosco@gmail.com</p>
+            <p>Cordón</p>
+            <p>Montevideo, Uruguay</p>
+            <p>+598 99 795 616</p>
+        </div>
+        <div class="footer__boxIcon__uno col-md-12 col-sm-12 d-flex justify-content-center">
+            <a class="footer__boxIcon__uno__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__uno__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #766e6e;"></i></a> 
+        </div>
+            <div class="footer__boxIcon__dos">
+           <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a> 
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

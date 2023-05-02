@@ -1,117 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 
 *{
+<<<<<<< HEAD
     margin: 0%;
     padding: 0%;
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> 2daPreEntrega
     box-sizing: border-box;
 }
-html{ 
-    font-size: 62.5%;
-}
-
 body{
-    font-family: 'Rubik', sans-serif;  
+    font-family: 'Castoro Titling', cursive;
+}
+.header{
+    border: 1px, solid, black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white
+}
+.header__contenedorLogo{
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.boxInicio{
-    margin-left: 70%;
-}
-.linkNav{
-    display: inline-block;
-    color: black;
-    list-style: none;
-    text-decoration: none;
-    font-size: medium;
+.main__titulos__tamaño{
+    width: 600px;
+    height: 600px;
 }
 
-.centrar{
+.main__contenedorSobremi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     text-align: center;
-    font-size: xx-large
+    height: fit-content;
+    margin-bottom: 15%;
+    margin-top: 15%;
 }
 
-.fondo{
-    background-image: url(../assets/img/fondo\ definitivo.JPG);
-    background-size: cover;
-    background-repeat: no-repeat;
+.main__contenedorSobremi__parrafo{
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    font-size: larger;
+    margin-top: 2%;
+}
+
+.main__contenedorImg{
+    margin-top: 5%;
+
+}
+.main__cards{
+    margin-bottom: 15%;
+}
+
+.main__contenedorGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main__contenedorGaleria__ImgIlu{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 1px black solid;
+    margin-top:10px;
+    border-radius: 20px;
+}
+.main__contenedorGaleria__ImgSeri{
+    object-fit: cover;
+    margin-top: 10px;
+    width: 450px;
+    height:450px;
+    margin-bottom: 10%;
+}
+.main__contenedorGaleria__ImgTatu{
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+}
+.main__contenedorGaleriaInicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__contenedorGaleria__imgInicio{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;   
+    margin-top:10px;
+}
+
+.main__tatuajes{
+    background-color: pink;
+}
+.list-group-item{
+    background-color: pink;
+}
+.main__cardCuidados{
+    margin-top: 15%;
+}
+.main__cardCuidados__parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    height: fit-content;
+}
+.main__nohacer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    margin-top: 15%;
+    background-image: url(../assets/img/hghghghg.jpeg);
+}
+.main__Videoparrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    height: fit-content;
+    font-size: large;
+    margin-top: 15%;
+}
+
+.main__boxVideo{
+    text-align: center;
+    margin-top: 5%;
+}
+.main__seriTamaño{
+    width: 200px;
+    height: 300px;
+}
+
+.main__textos{
+    margin-top: 5%;
+    margin-bottom: 15%;
+    font-size: large;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.main__boxForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.main__boxMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__sectionContacto{
+    background-image: url(../assets/img/hghghghg.jpeg);
     background-position: center;
-    background-attachment: fixed;
-    height: 100vh
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.boxUno{
-    background-color: black;
-    display: inline-block;
-    margin-top: 10vh;
-    width: 50%;
-    height: 50%;
-    margin-left: 25%;
-    margin-right: 10%;
-    text-align: center;
+.mainContacto{
+    background-color: white;
 }
-
-.boxDos{
-    background-color: black;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    width: 50%;
-    height: 50%;
-    margin-left: 25%;
-    margin-right: 10%
+.main__cardCuidados{
+    margin-bottom: 2%;
 }
-
-.boxTres{
-    background-color: black;
-    color: white;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.boxImg{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-.boxSobremi{
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 50%;
-    height: 15%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.boxTatus{
-    display: inline-block;
-}
-.boxVideo{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: small;
-}
-
-.icon{
+.footer__boxIcon__uno{
     font-size: 3rem;
-    color: black;
-    display: inline-block;
 }
-.whatsapp{
-    font-size: 3rem;
-    color: green;
-    display: inline-block;
-}
-.boxIcon{
+.footer__boxIcon__dos{
     display: inline-block;
     position: fixed;
     right: 0%;
     bottom: 0%;
-    background-color: white;
 }
-    
-/*Buenas! Edité con css todas las páginas
-capaz centrarse en la de "Tatuajes" es mejor porque esta mas completa y tiene la parte del video. Gracias!*/
+.footer__boxIcon__icon__dos{
+    font-size: 3rem;
+    display: inline-block;
+}
 
+.footer__logo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
+.contenedorCentrar{
+    margin-top: 5%;
+}

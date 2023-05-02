@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>nidea</title>
-        <link rel="stylesheet" href="../css/estilos.css">
-        <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div>
-                <img src="../assets/img/logofinal.jpg" alt="nidea" width="130px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/eb5d67a816.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header container-fluid">
+        <section class="row">
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center header__contenedorLogo">
+                <img src="../assets/img/logo.jpg" alt="logo">
             </div>
-            
-            <nav>
-                <ul>
-                    <div class="boxInicio">
-                    <li class="linkNav"><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li class="linkNav"><a class="linkNav" href="../pages/Ilustración.html">Ilustración</a></li>
-                    <li class="linkNav"><a class="linkNav" href="Serigrafía.html">Serigrafía</a></li>
-                    <li class="linkNav"><a class="linkNav" href="Tatuajes.html">Tatuajes</a></li>
-                    <li class="linkNav"><a class="linkNav" href="#">Contacto</a></li>
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center"">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Contacto</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./Ilustración.html">Ilustración</a>
+                        <a class="nav-link" href="./Serigrafía.html">Serigrafía</a>
+                        <a class="nav-link" href="./Tatuajes.html">Tatuajes</a>                       
                     </div>
-
-            
-                </ul>
-                <hr>
+                    </div>
+                </div>
             </nav>
-
-        </header>
-        <main class="fondo">
-                <div class="boxTres">
-                <h1 class="centrar">CONTACTO</h1> 
-                </div>
-            <form>
-                <div class="boxUno">
-                <input type="text" placeholder="ingresa tu nombre" required>
-                <br>
-                <input type="mail" placeholder="ingresa tu mail" required>
-                <br>
-                <textarea cols="30" rows="10" placeholder="escribe tu mensaje" required></textarea>
-                <br>
-                <input type="submit" value="envíar mensaje">
-                <input type="reset" value="limpiar">
-                </div>
-                <br>
-                <br>
-                <div class="boxDos">
-                <p>todos los derechos reservados</p>
-            <iframe class="contenedorMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0160152672197!2d-56.1752063!3d-34.9060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b1519d5923%3A0xde3ced9b4e611b67!2sCharr%C3%BAa%20%26%20Dr%20Emilio%20Frugoni%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1678819206476!5m2!1ses-419!2suy" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </section>  
+    </header>
+    <main class="mainContacto conteiner">
+        <div class="main__titulos col-md-12 col-sm-12 d-flex justify-content-center">
+            <img class="main__titulos__tamaño" src="../assets/img/CONTACTO-05.png" alt="titulo">
+        </div>
+        <div class="col-sm-12 col-md-12 contenedorCentrar d-flex justify-content-center">
+            <h1>Por cualquier consulta, ¡comunicate!</h1>
+        </div>
+        <section class="row main__sectionContacto">
+            <form class="col-md-6 col-sm-12 d-flex justify-content-center">
+                <div class="main__boxForm">
+                    <input type="text" placeholder="ingresa tu nombre" required>
+                    <input type="mail" placeholder="ingresa tu mail" required>
+                    <textarea cols="30" rows="10" placeholder="escribe tu mensaje" required></textarea>
+                    <input type="submit" value="enviar mensaje">
+                    <input type="reset" value="limpiar">
                 </div>
             </form>
-            
-        
-
-        </main>
-        <footer>
-            <hr>
-            <div class="boxIcon">
-            <a class="icon" href="https://www.instagram.com/__nidea.__/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-            <a class="icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope"></i></i></a>
-            <a class="whatsapp" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <div class="col-md-6 col-sm-12 d-flex justify-content-center main__boxMap">               
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.0160152672197!2d-56.1752063!3d-34.9060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b1519d5923%3A0xde3ced9b4e611b67!2sCharr%C3%BAa%20%26%20Dr%20Emilio%20Frugoni%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1678819206476!5m2!1ses-419!2suy" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>todos los derechos reservados</p>
             </div>
-
-        </footer>
-
-    </body>
+        </section>
+    </main>
+        
+    <footer class="footer conteiner-fluid">
+        <div class="footer__logo col-md-12 col-sm-12 d-flex justify-content-center">
+            <img src="../assets/img/logo.jpg" alt="logo">
+        </div>
+        <div class="footer__datos col-md-6 col-md-12 d-flex flex-column align-items-center">
+            <p>juliapresabosco@gmail.com</p>
+            <p>Cordón</p>
+            <p>Montevideo, Uruguay</p>
+            <p>+598 99 795 616</p>
+        </div>
+        <div class="footer__boxIcon__uno col-md-12 col-sm-12 d-flex justify-content-center">
+            <a class="footer__boxIcon__uno__icon" href="https://www.instagram.com/__nidea.__/" target="_blank"><i class="fa-brands fa-instagram" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__uno__icon" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMSqJmPXwWtvSRSwWSCJpmjzvpdpwTBXVmJdtTrSLcSLcFSzlVnVnxRhVWvvnDCCbQFddGc" target="_blank"><i class="fa-regular fa-envelope" style="color: #766e6e;"></i></a>
+            <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #766e6e;"></i></a> 
+        </div>
+            <div class="footer__boxIcon__dos">
+           <a class="footer__boxIcon__icon__dos" href="https://api.whatsapp.com/send?phone=59892466664" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #367240;"></i></a> 
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
