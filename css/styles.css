@@ -6,6 +6,23 @@
   box-sizing: border-box;
 }
 
+header {
+  font-family: "Castoro Titling", cursive;
+  border: 1px, solid, black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+header .contenedorLogo {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+main {
+  font-family: "Castoro Titling", cursive;
+  background-color: white;
+}
 main .titulos__tamaño {
   width: 600px;
   height: 600px;
@@ -187,18 +204,6 @@ main .sectionContacto .boxMap {
   align-items: center;
 }
 
-header {
-  border: 1px, solid, black;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: white;
-}
-header .contenedorLogo {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
 footer .logo {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -212,7 +217,7 @@ footer .boxIcon__dos {
   right: 0%;
   bottom: 0%;
 }
-footer .boxIcon__icon__dos {
+footer .boxIcon__dos .iconDos {
   font-size: 3rem;
   display: inline-block;
 }
