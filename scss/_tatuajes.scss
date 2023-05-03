@@ -1,11 +1,11 @@
 body {
-    
+
     .mainTatuajes {
         font-family: $font;
-        background-color: $backgroundtatuajes;
+        background-color: $backgroundcolor;
 
         .titulos__tamaño {
-            @include sizes (600px,600px);
+            @include sizes (600px, 600px);
         }
 
         .contenedorGaleria {
@@ -14,8 +14,10 @@ body {
             justify-content: map-get($map: $flexelements, $key: space-evenly);
 
             .ImgTatu {
-                @include sizes (300px,300px);
+                @include sizes (400px, 400px);
                 margin-top: 5%;
+                border: 1px black solid;
+                border-radius: 20px;
             }
         }
 
@@ -27,26 +29,54 @@ body {
                 display: map-get($map: $flexelements, $key: flex);
                 flex-direction: map-get($map: $flexelements, $key: column);
                 align-items: center;
-                @include sizes (50%,fit-content);
+                @include sizes (50%, fit-content);
                 text-align: center;
             }
         }
 
-        .listaItem {
-            background-color: $backgroundtatuajes;
+        .titulotatu {
+            display: map-get($map: $flexelements, $key: flex);
+            flex-direction: map-get($map: $flexelements, $key: column);
+            align-items: center;
+            font-size: small;
+            margin-top: 10%;
         }
-        .nohacerTitulo{
+
+        .listaItem {
+
+            display: map-get($map: $flexelements, $key: flex);
+            flex-direction: map-get($map: $flexelements, $key: row);
+            width: 100%;
+            justify-content: map-get($map: $flexelements, $key: space-evenly);
+        }
+
+        .listaItemolDos {
+            display: map-get($map: $flexelements, $key: flex);
+            flex-direction: map-get($map: $flexelements, $key: column);
+            width: 90%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        .nohacerTitulo {
             display: map-get($map: $flexelements, $key: flex);
             justify-content: center;
             margin-top: 10%
         }
+
         .nohacer {
             @extend .cardCuidados__parrafo;
             width: 100%;
-            background-image: url(../assets/img/hghghghg.jpeg);
+        }
 
-            .listaItem {
-                background-color: $backgroundtatuajes;
+        .contenedorGaleriados {
+            @extend .contenedorGaleria;
+
+            .imgTatudos {
+                @include sizes (300px, 300px);
+                border: 1px black solid;
+                border-radius: 20px;
+                margin-top: 5%;
             }
         }
 
@@ -58,7 +88,7 @@ body {
                 display: map-get($map: $flexelements, $key: flex);
                 flex-direction: map-get($map: $flexelements, $key: column);
                 align-items: center;
-                @include sizes (50%,fit-content);
+                @include sizes (50%, fit-content);
                 text-align: center;
                 font-size: large;
                 margin-top: 15%;
