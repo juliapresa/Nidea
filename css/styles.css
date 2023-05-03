@@ -35,8 +35,8 @@ body .mainInicio .contenedorSobremi {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   text-align: center;
+  width: 100%;
   height: fit-content;
   margin-bottom: 15%;
   margin-top: 15%;
@@ -154,24 +154,24 @@ body .mainTatuajes .cardCuidados {
   margin-top: 15%;
   margin-bottom: 2%;
 }
-body .mainTatuajes .cardCuidados .cardCuidados__parrafo {
+body .mainTatuajes .cardCuidados .cardCuidados__parrafo, body .mainTatuajes .cardCuidados .nohacer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
-  text-align: center;
   height: fit-content;
+  text-align: center;
 }
 body .mainTatuajes .listaItem {
   background-color: pink;
 }
-body .mainTatuajes .nohacer {
+body .mainTatuajes .nohacerTitulo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: fit-content;
-  margin-top: 15%;
+  justify-content: center;
+  margin-top: 10%;
+}
+body .mainTatuajes .nohacer {
+  width: 100%;
   background-image: url(../assets/img/hghghghg.jpeg);
 }
 body .mainTatuajes .nohacer .listaItem {
@@ -186,8 +186,8 @@ body .mainTatuajes .boxVideo .videoParrafo {
   flex-direction: column;
   align-items: center;
   width: 50%;
-  text-align: center;
   height: fit-content;
+  text-align: center;
   font-size: large;
   margin-top: 15%;
 }
@@ -197,8 +197,8 @@ body .mainContacto {
   background-color: white;
 }
 body .mainContacto .titulos__tamaño {
-  width: 600PX;
-  height: 600PX;
+  width: 600px;
+  height: 600px;
 }
 body .mainContacto .contenedorCentrar {
   margin-top: 5%;
@@ -229,6 +229,9 @@ footer .logo {
 footer .boxIcon__uno {
   font-size: 3rem;
 }
+footer .boxIcon__uno .icon {
+  color: #766e6e;
+}
 footer .boxIcon__dos {
   display: inline-block;
   position: fixed;
@@ -237,6 +240,7 @@ footer .boxIcon__dos {
 }
 footer .boxIcon__dos .iconDos {
   font-size: 3rem;
+  color: #367240;
   display: inline-block;
 }
 

@@ -7,8 +7,7 @@ body {
         background-color: $backgroundcolor;
 
         .titulos__tamaño {
-            width: 600px;
-            height: 600px;
+            @include sizes (600px,600px);
         }
 
         .contenedorLogo {
@@ -29,8 +28,7 @@ body {
             justify-content: map-get($map: $flexelements, $key: space-evenly);
 
             .ImgIlu {
-                width: 400px;
-                height: 400px;
+                @include sizes (400px,400px);
                 object-fit: cover;
                 border: 1px black solid;
                 margin-top: 10px;

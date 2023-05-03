@@ -4,8 +4,7 @@ body {
         background-color: $backgroundcolor;
         
         .titulos__tamaño {
-            width: 600PX;
-            height: 600PX;
+            @include sizes (600px,600px);
         }
 
         .contenedorCentrar {

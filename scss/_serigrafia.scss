@@ -4,8 +4,7 @@ body {
         background-color: $backgroundcolor;
 
         .titulos__tamaño {
-            width: 600px;
-            height: 600px;
+            @include sizes (600px,600px);
         }
 
         .textos {
@@ -18,8 +17,7 @@ body {
         }
 
         .seriTamaño {
-            width: 200px;
-            height: 300px;
+            @include sizes (200px,300px);
         }
 
         .contenedorGaleria {
@@ -31,8 +29,7 @@ body {
                 object-fit: cover;
                 margin-top: 10px;
                 margin-bottom: 10%;
-                width: 450px;
-                height: 450px;
+                @include sizes (450px,450px);
             }
         }
     }

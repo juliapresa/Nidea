@@ -7,23 +7,20 @@ body {
         background-color: $backgroundcolor;
 
         .titulos__tamaño {
-            width: 600px;
-            height: 600px;
+            @include sizes (600px,600px);
         }
 
         .contenedorSobremi {
             display: map-get($map: $flexelements, $key: flex);
             flex-direction:map-get($map: $flexelements, $key: column);
             align-items: center;
-            width: 100%;
             text-align: center;
-            height: fit-content;
+            @include sizes (100%,fit-content);
             margin-bottom: 15%;
             margin-top: 15%;
 
             .contenedorSobremi__parrafo {
-                width: 50%;
-                height: 50%;
+                @include sizes (50%,50%);
                 align-content: center;
                 font-size: larger;
                 margin-top: 2%;
@@ -40,8 +37,7 @@ body {
             justify-content: center;
 
             .imgInicio {
-                width: 300px;
-                height: 300px;
+                @include sizes (300px,300px);
                 object-fit: cover;
                 margin-top: 10px;
             }

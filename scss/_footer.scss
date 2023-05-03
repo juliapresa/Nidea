@@ -1,11 +1,13 @@
 footer{
-
     .logo{
         margin-top: 2%;
         margin-bottom: 2%;
     }
     .boxIcon__uno{
         font-size: 3rem;
+        .icon{
+            color: $coloricon;
+        }
     }
     .boxIcon__dos{
         display: inline-block;
@@ -14,6 +16,7 @@ footer{
         bottom: 0%;
         .iconDos{
             font-size: 3rem;
+            color: $coloricondos;
             display: inline-block;
         }
     }
