@@ -1,10 +1,10 @@
 body {
     font-family: $font;
-    background-color: $color;
+    background-color: $backgroundcolor;
         
     .mainIlustracion {
         font-family: $font;
-        background-color: $color;
+        background-color: $backgroundcolor;
 
         .titulos__tamaño {
             width: 600px;
@@ -21,14 +21,12 @@ body {
             margin-bottom: 15%;
             font-size: large;
             width: 50%;
-            margin-left: 10%;
-            margin-right: 5%;
         }
 
         .contenedorGaleria {
-            display: flex;
+            display: map-get($map: $flexelements, $key: flex);
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: map-get($map: $flexelements, $key: space-evenly);
 
             .ImgIlu {
                 width: 400px;

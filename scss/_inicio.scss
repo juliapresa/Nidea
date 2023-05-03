@@ -1,9 +1,10 @@
 body {
     width: 100vw;
     overflow-x: hidden;
+
     .mainInicio {
         font-family: $font;
-        background-color: $color;
+        background-color: $backgroundcolor;
 
         .titulos__tamaño {
             width: 600px;
@@ -11,8 +12,8 @@ body {
         }
 
         .contenedorSobremi {
-            display: flex;
-            flex-direction: column;
+            display: map-get($map: $flexelements, $key: flex);
+            flex-direction:map-get($map: $flexelements, $key: column);
             align-items: center;
             width: 100%;
             text-align: center;
@@ -34,7 +35,7 @@ body {
         }
 
         .contenedorGaleriaInicio {
-            display: flex;
+            display: map-get($map: $flexelements, $key: flex);
             flex-wrap: wrap;
             justify-content: center;
 
@@ -46,63 +47,5 @@ body {
             }
         }
 
-    }
-}
-
-@media screen and (min-width:0px) and (max-width:768px){
-    body {
-        width: 100vw;
-        overflow-x: hidden;
-        .mainInicio {
-            font-family: $font;
-            background-color: $color;
-    
-            .titulos__tamaño {
-                width: 300px;
-                height: 300px;
-            }
-            .carrusel{
-                width: 50%;
-            }
-            .contenedorSobremi {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                text-align: center;
-                height: fit-content;
-                margin-bottom: 5%;
-                margin-top: 5%;
-                width: 95%;
-    
-                .contenedorSobremi__parrafo {
-                    width: 50%;
-                    height: 50%;
-                    align-content: center;
-                    font-size: larger;
-                    margin-top: 2%;
-                }
-            }
-    
-            .cards {
-                margin-bottom:  5%;
-                width: 50%;
-            }
-    
-            .contenedorGaleriaInicio {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 50%;
-    
-                .imgInicio {
-                    width: 100px;
-                    height: 100px;
-                    object-fit: cover;
-                    margin-top: 5px;
-                }
-            }
-    
-        }
     }
 }

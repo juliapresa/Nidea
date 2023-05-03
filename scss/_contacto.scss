@@ -1,7 +1,7 @@
 body {
     .mainContacto {
         font-family: $font;
-        background-color: $color;
+        background-color: $backgroundcolor;
         
         .titulos__tamaño {
             width: 600PX;
@@ -19,17 +19,16 @@ body {
             background-size: cover;
 
             .boxForm {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
+                display: map-get($map: $flexelements, $key: flex);
+                flex-direction: map-get($map: $flexelements, $key: column);
                 align-items: center;
                 margin-top: 15%;
                 margin-bottom: 5%;
             }
 
             .boxMap {
-                display: flex;
-                flex-direction: column;
+                display: map-get($map: $flexelements, $key: flex);
+                flex-direction: map-get($map: $flexelements, $key: column);
                 align-items: center;
             }
         }

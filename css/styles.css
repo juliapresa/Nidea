@@ -63,57 +63,6 @@ body .mainInicio .contenedorGaleriaInicio .imgInicio {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-  body .mainInicio {
-    font-family: "Castoro Titling", cursive;
-    background-color: white;
-  }
-  body .mainInicio .titulos__tamaño {
-    width: 300px;
-    height: 300px;
-  }
-  body .mainInicio .carrusel {
-    width: 95%;
-  }
-  body .mainInicio .contenedorSobremi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    height: fit-content;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    width: 95%;
-  }
-  body .mainInicio .contenedorSobremi .contenedorSobremi__parrafo {
-    width: 50%;
-    height: 50%;
-    align-content: center;
-    font-size: larger;
-    margin-top: 2%;
-  }
-  body .mainInicio .cards {
-    margin-bottom: 5%;
-    width: 50%;
-  }
-  body .mainInicio .contenedorGaleriaInicio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 50%;
-  }
-  body .mainInicio .contenedorGaleriaInicio .imgInicio {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-top: 5px;
-  }
-}
 body {
   font-family: "Castoro Titling", cursive;
   background-color: white;
@@ -135,8 +84,6 @@ body .mainIlustracion .textos {
   margin-bottom: 15%;
   font-size: large;
   width: 50%;
-  margin-left: 10%;
-  margin-right: 5%;
 }
 body .mainIlustracion .contenedorGaleria {
   display: flex;
@@ -180,9 +127,9 @@ body .mainSerigrafia .contenedorGaleria {
 body .mainSerigrafia .contenedorGaleria .ImgSeri {
   object-fit: cover;
   margin-top: 10px;
+  margin-bottom: 10%;
   width: 450px;
   height: 450px;
-  margin-bottom: 10%;
 }
 
 body .mainTatuajes {
@@ -265,7 +212,6 @@ body .mainContacto .sectionContacto {
 body .mainContacto .sectionContacto .boxForm {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   margin-top: 15%;
   margin-bottom: 5%;

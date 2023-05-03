@@ -1,3 +1,12 @@
-$colorpink: pink;
-$color: white;
+$backgroundtatuajes: pink;
+$backgroundcolor: white;
 $font: 'Castoro Titling', cursive;
+
+$flexelements:(
+    flex:flex,
+    row: row,
+    column: column,
+    space-around: space-around,
+    space-evenly: space-evenly,
+    space-between: space-between,
+)

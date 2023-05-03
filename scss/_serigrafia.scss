@@ -1,7 +1,7 @@
 body {
     .mainSerigrafia {
         font-family: $font;
-        background-color: $color;
+        background-color: $backgroundcolor;
 
         .titulos__tamaño {
             width: 600px;
@@ -23,16 +23,16 @@ body {
         }
 
         .contenedorGaleria {
-            display: flex;
+            display: map-get($map: $flexelements, $key: flex);
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: map-get($map: $flexelements, $key: space-evenly);
 
             .ImgSeri {
                 object-fit: cover;
                 margin-top: 10px;
+                margin-bottom: 10%;
                 width: 450px;
                 height: 450px;
-                margin-bottom: 10%;
             }
         }
     }
