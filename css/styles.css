@@ -19,15 +19,19 @@ header .contenedorLogo {
   margin-bottom: 2%;
 }
 
-main {
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body .mainInicio {
   font-family: "Castoro Titling", cursive;
   background-color: white;
 }
-main .titulos__tamaño {
+body .mainInicio .titulos__tamaño {
   width: 600px;
   height: 600px;
 }
-main .contenedorSobremi {
+body .mainInicio .contenedorSobremi {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,37 +41,45 @@ main .contenedorSobremi {
   margin-bottom: 15%;
   margin-top: 15%;
 }
-main .contenedorSobremi .contenedorSobremi__parrafo {
+body .mainInicio .contenedorSobremi .contenedorSobremi__parrafo {
   width: 50%;
   height: 50%;
   align-content: center;
   font-size: larger;
   margin-top: 2%;
 }
-main .cards {
+body .mainInicio .cards {
   margin-bottom: 15%;
 }
-main .contenedorGaleriaInicio {
+body .mainInicio .contenedorGaleriaInicio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main .contenedorGaleriaInicio .imgInicio {
+body .mainInicio .contenedorGaleriaInicio .imgInicio {
   width: 300px;
   height: 300px;
   object-fit: cover;
   margin-top: 10px;
 }
 
-main .titulos__tamaño {
+body {
+  font-family: "Castoro Titling", cursive;
+  background-color: white;
+}
+body .mainIlustracion {
+  font-family: "Castoro Titling", cursive;
+  background-color: white;
+}
+body .mainIlustracion .titulos__tamaño {
   width: 600px;
   height: 600px;
 }
-main .contenedorLogo {
+body .mainIlustracion .contenedorLogo {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-main .textos {
+body .mainIlustracion .textos {
   margin-top: 5%;
   margin-bottom: 15%;
   font-size: large;
@@ -75,12 +87,12 @@ main .textos {
   margin-left: 10%;
   margin-right: 5%;
 }
-main .contenedorGaleria {
+body .mainIlustracion .contenedorGaleria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-main .contenedorGaleria .ImgIlu {
+body .mainIlustracion .contenedorGaleria .ImgIlu {
   width: 400px;
   height: 400px;
   object-fit: cover;
@@ -89,11 +101,19 @@ main .contenedorGaleria .ImgIlu {
   border-radius: 20px;
 }
 
-main .titulos__tamaño {
+body {
+  font-family: "Castoro Titling", cursive;
+  background-color: white;
+}
+body .mainSerigrafia {
+  font-family: "Castoro Titling", cursive;
+  background-color: white;
+}
+body .mainSerigrafia .titulos__tamaño {
   width: 600px;
   height: 600px;
 }
-main .textos {
+body .mainSerigrafia .textos {
   margin-top: 5%;
   margin-bottom: 15%;
   font-size: large;
@@ -101,16 +121,16 @@ main .textos {
   margin-left: 10%;
   margin-right: 5%;
 }
-main .seriTamaño {
+body .mainSerigrafia .seriTamaño {
   width: 200px;
   height: 300px;
 }
-main .contenedorGaleria {
+body .mainSerigrafia .contenedorGaleria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-main .contenedorGaleria .ImgSeri {
+body .mainSerigrafia .contenedorGaleria .ImgSeri {
   object-fit: cover;
   margin-top: 10px;
   width: 450px;
@@ -118,28 +138,33 @@ main .contenedorGaleria .ImgSeri {
   margin-bottom: 10%;
 }
 
-main {
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body .mainTatuajes {
+  font-family: "Castoro Titling", cursive;
   background-color: pink;
 }
-main .titulos__tamaño {
+body .mainTatuajes .titulos__tamaño {
   width: 600px;
   height: 600px;
 }
-main .contenedorGaleria {
+body .mainTatuajes .contenedorGaleria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-main .contenedorGaleria .ImgTatu {
+body .mainTatuajes .contenedorGaleria .ImgTatu {
   width: 300px;
   height: 300px;
   margin-top: 5%;
 }
-main .cardCuidados {
+body .mainTatuajes .cardCuidados {
   margin-top: 15%;
   margin-bottom: 2%;
 }
-main .cardCuidados .cardCuidados__parrafo {
+body .mainTatuajes .cardCuidados .cardCuidados__parrafo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,10 +172,10 @@ main .cardCuidados .cardCuidados__parrafo {
   text-align: center;
   height: fit-content;
 }
-main .listaItem {
+body .mainTatuajes .listaItem {
   background-color: pink;
 }
-main .nohacer {
+body .mainTatuajes .nohacer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,14 +184,14 @@ main .nohacer {
   margin-top: 15%;
   background-image: url(../assets/img/hghghghg.jpeg);
 }
-main .nohacer .listaItem {
+body .mainTatuajes .nohacer .listaItem {
   background-color: pink;
 }
-main .boxVideo {
+body .mainTatuajes .boxVideo {
   text-align: center;
   margin-top: 5%;
 }
-main .boxVideo .videoParrafo {
+body .mainTatuajes .boxVideo .videoParrafo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,20 +202,24 @@ main .boxVideo .videoParrafo {
   margin-top: 15%;
 }
 
-main .titulos__tamaño {
-  width: 600px;
-  height: 600px;
+body .mainContacto {
+  font-family: "Castoro Titling", cursive;
+  background-color: white;
 }
-main .contenedorCentrar {
+body .mainContacto .titulos__tamaño {
+  width: 600PX;
+  height: 600PX;
+}
+body .mainContacto .contenedorCentrar {
   margin-top: 5%;
 }
-main .sectionContacto {
+body .mainContacto .sectionContacto {
   background-image: url(../assets/img/hghghghg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .sectionContacto .boxForm {
+body .mainContacto .sectionContacto .boxForm {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -198,7 +227,7 @@ main .sectionContacto .boxForm {
   margin-top: 15%;
   margin-bottom: 5%;
 }
-main .sectionContacto .boxMap {
+body .mainContacto .sectionContacto .boxMap {
   display: flex;
   flex-direction: column;
   align-items: center;

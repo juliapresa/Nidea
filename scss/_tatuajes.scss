@@ -1,59 +1,74 @@
-main{
-    background-color: $colorpink;
+body {
+    width: 100vw;
+    overflow-x: hidden;
 
-    .titulos__tamaño{
-        width: 600px;
-        height: 600px;
-    }
-    .contenedorGaleria{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .ImgTatu{
-            width: 300px;
-            height: 300px;
-            margin-top: 5%;
-        }
-    }
-    .cardCuidados{
-        margin-top: 15%;
-        margin-bottom: 2%;
-        .cardCuidados__parrafo{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-            text-align: center;
-            height: fit-content;
-        }
-    }
-    .listaItem{
+    .mainTatuajes {
+        font-family: $font;
         background-color: $colorpink;
-    }
-    .nohacer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        height: fit-content;
-        margin-top: 15%;
-        background-image: url(../assets/img/hghghghg.jpeg);
-        .listaItem{
+
+        .titulos__tamaño {
+            width: 600px;
+            height: 600px;
+        }
+
+        .contenedorGaleria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .ImgTatu {
+                width: 300px;
+                height: 300px;
+                margin-top: 5%;
+            }
+        }
+
+        .cardCuidados {
+            margin-top: 15%;
+            margin-bottom: 2%;
+
+            .cardCuidados__parrafo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                text-align: center;
+                height: fit-content;
+            }
+        }
+
+        .listaItem {
             background-color: $colorpink;
         }
-    }
-    .boxVideo{
-        text-align: center;
-        margin-top: 5%;
-        .videoParrafo{
+
+        .nohacer {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 50%;
             text-align: center;
             height: fit-content;
-            font-size: large;
             margin-top: 15%;
+            background-image: url(../assets/img/hghghghg.jpeg);
+
+            .listaItem {
+                background-color: $colorpink;
+            }
+        }
+
+        .boxVideo {
+            text-align: center;
+            margin-top: 5%;
+
+            .videoParrafo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                text-align: center;
+                height: fit-content;
+                font-size: large;
+                margin-top: 15%;
+            }
         }
     }
 }
