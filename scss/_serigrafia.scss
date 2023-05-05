@@ -1,19 +1,26 @@
 body {
     .mainSerigrafia {
-        font-family: $font;
+        font-family: 'Castoro Titling', cursive;
+        font-family: 'Source Serif Pro', serif;
         background-color: $backgroundcolor;
 
         .titulos__tamaño {
-            @include sizes (600px,600px);
+            @include sizes (400px,400px);
         }
-
+        
         .textos {
-            margin-top: 5%;
+            
             margin-bottom: 15%;
-            font-size: large;
             width: 50%;
             margin-left: 10%;
             margin-right: 5%;
+                .titulos{
+                    font-family: $fonttitulo;
+                }
+                .parrafo{
+                    font-family: $fonttextos;
+                    font-size: xx-large;  
+                }
         }
 
         .seriTamaño {
@@ -30,6 +37,64 @@ body {
                 margin-top: 10px;
                 margin-bottom: 10%;
                 @include sizes (450px,450px);
+            }
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+        .mainSerigrafia {
+            width: 100vw;
+            overflow-x: hidden;
+            font-family: 'Castoro Titling', cursive;
+            font-family: 'Source Serif Pro', serif;
+            background-color: $backgroundcolor;
+    
+            .titulos__tamaño {
+                @include sizes (300px,300px);
+            }
+            
+            .textos {
+                margin-left: 0%;
+                margin-right: 0%;
+                justify-content: center;
+                width: 95%;
+                    .titulos{
+                        font-family: $fonttitulo;
+                        justify-content: center;
+                    }
+                    .parrafo{
+                        font-family: $fonttextos;
+                        font-size: x-large;  
+                        justify-content: center
+                    }
+            }
+            .titulos{
+                font-family: $fonttitulo;
+                justify-content: center;
+            }
+            .parrafo{
+                font-family: $fonttextos;
+                font-size: x-large;  
+                justify-content: center
+            }
+    
+            .seriTamaño {
+                @include sizes (200px,200px);
+                margin-bottom: 10%;
+            }
+    
+            .contenedorGaleria {
+                display: map-get($map: $flexelements, $key: flex);
+                flex-wrap: wrap;
+                justify-content: map-get($map: $flexelements, $key: space-evenly);
+                width: 95%;
+                .ImgSeri {
+                    object-fit: cover;
+                    margin-top: 10px;
+                    margin-bottom: 10%;
+                    @include sizes (200px,200px);
+                }
             }
         }
     }

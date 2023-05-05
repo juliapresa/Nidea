@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -19,17 +19,29 @@ header .contenedorLogo {
   margin-bottom: 2%;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+  header .contenedorLogo {
+    width: 90%;
+  }
+  header .contenedorNav {
+    width: 90%;
+  }
+}
 body {
   width: 100vw;
   overflow-x: hidden;
+  font-family: "Castoro Titling", cursive;
+  font-family: "Source Serif Pro", serif;
 }
 body .mainInicio {
-  font-family: "Castoro Titling", cursive;
   background-color: white;
 }
 body .mainInicio .titulos__tamaño {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 body .mainInicio .contenedorSobremi {
   display: flex;
@@ -42,11 +54,15 @@ body .mainInicio .contenedorSobremi {
   margin-top: 15%;
 }
 body .mainInicio .contenedorSobremi .contenedorSobremi__parrafo {
+  font-family: "Source Serif Pro", serif;
+  font-size: xx-large;
   width: 50%;
   height: 50%;
   align-content: center;
-  font-size: larger;
   margin-top: 2%;
+}
+body .mainInicio .contenedorSobremi .titulos {
+  font-family: "Castoro Titling", cursive;
 }
 body .mainInicio .cards {
   margin-bottom: 15%;
@@ -63,27 +79,72 @@ body .mainInicio .contenedorGaleriaInicio .imgInicio {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    font-family: "Castoro Titling", cursive;
+    font-family: "Source Serif Pro", serif;
+  }
+  body .mainInicio {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: white;
+  }
+  body .mainInicio .titulos__tamaño {
+    width: 300px;
+    height: 300px;
+  }
+  body .mainInicio .contenedorSobremi {
+    justify-content: center;
+    width: 95%;
+    padding: 0%;
+    margin: 0%;
+  }
+  body .mainInicio .contenedorSobremi .titulos {
+    font-family: "Castoro Titling", cursive;
+    justify-content: center;
+  }
+  body .mainInicio .contenedorSobremi .contenedorSobremi__parrafo {
+    width: 95%;
+    font-family: "Source Serif Pro", serif;
+    font-size: x-large;
+    justify-content: center;
+  }
+  body .mainInicio .contenedorGaleriaInicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .mainInicio .contenedorGaleriaInicio .imgInicio {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+}
 body {
   font-family: "Castoro Titling", cursive;
-  background-color: white;
-}
-body .mainIlustracion {
-  font-family: "Castoro Titling", cursive;
+  font-family: "Source Serif Pro", serif;
   background-color: white;
 }
 body .mainIlustracion .titulos__tamaño {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
-body .mainIlustracion .contenedorLogo {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-body .mainIlustracion .textos {
-  margin-top: 5%;
+body .mainIlustracion .sectionIlu .textos {
+  justify-content: center;
+  width: 95%;
+  margin-top: 15%;
   margin-bottom: 15%;
-  font-size: large;
-  width: 50%;
+}
+body .mainIlustracion .sectionIlu .textos .titulos {
+  font-family: "Castoro Titling", cursive;
+  justify-content: center;
+}
+body .mainIlustracion .sectionIlu .textos .parrafo {
+  width: 95%;
+  font-family: "Source Serif Pro", serif;
+  font-size: x-large;
+  justify-content: center;
 }
 body .mainIlustracion .contenedorGaleria, body .mainIlustracion .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainIlustracion .contenedorGaleriados {
   display: flex;
@@ -91,29 +152,79 @@ body .mainIlustracion .contenedorGaleria, body .mainIlustracion .mainTatuajes .c
   justify-content: space-evenly;
 }
 body .mainIlustracion .contenedorGaleria .ImgIlu, body .mainIlustracion .mainTatuajes .contenedorGaleriados .ImgIlu, body .mainTatuajes .mainIlustracion .contenedorGaleriados .ImgIlu {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border: 1px black solid;
   margin-top: 10px;
   border-radius: 20px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    font-family: "Castoro Titling", cursive;
+    font-family: "Source Serif Pro", serif;
+    background-color: white;
+  }
+  body .mainIlustracion {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .mainIlustracion .titulos__tamaño {
+    width: 300px;
+    height: 300px;
+  }
+  body .mainIlustracion .contenedorLogo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  body .mainIlustracion .textos {
+    margin-top: 5%;
+    margin-bottom: 15%;
+    width: 50%;
+  }
+  body .mainIlustracion .textos .titulos {
+    font-family: "Castoro Titling", cursive;
+  }
+  body .mainIlustracion .textos .parrafo {
+    font-family: "Source Serif Pro", serif;
+    font-size: xx-large;
+  }
+  body .mainIlustracion .contenedorGaleria, body .mainIlustracion .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainIlustracion .contenedorGaleriados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body .mainIlustracion .contenedorGaleria .ImgIlu, body .mainIlustracion .mainTatuajes .contenedorGaleriados .ImgIlu, body .mainTatuajes .mainIlustracion .contenedorGaleriados .ImgIlu {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px black solid;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+}
 body .mainSerigrafia {
   font-family: "Castoro Titling", cursive;
+  font-family: "Source Serif Pro", serif;
   background-color: white;
 }
 body .mainSerigrafia .titulos__tamaño {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 body .mainSerigrafia .textos {
-  margin-top: 5%;
   margin-bottom: 15%;
-  font-size: large;
   width: 50%;
   margin-left: 10%;
   margin-right: 5%;
+}
+body .mainSerigrafia .textos .titulos {
+  font-family: "Castoro Titling", cursive;
+}
+body .mainSerigrafia .textos .parrafo {
+  font-family: "Source Serif Pro", serif;
+  font-size: xx-large;
 }
 body .mainSerigrafia .seriTamaño {
   width: 200px;
@@ -132,13 +243,69 @@ body .mainSerigrafia .contenedorGaleria .ImgSeri, body .mainSerigrafia .mainTatu
   height: 450px;
 }
 
-body .mainTatuajes {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body .mainSerigrafia {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Castoro Titling", cursive;
+    font-family: "Source Serif Pro", serif;
+    background-color: white;
+  }
+  body .mainSerigrafia .titulos__tamaño {
+    width: 300px;
+    height: 300px;
+  }
+  body .mainSerigrafia .textos {
+    margin-left: 0%;
+    margin-right: 0%;
+    justify-content: center;
+    width: 95%;
+  }
+  body .mainSerigrafia .textos .titulos {
+    font-family: "Castoro Titling", cursive;
+    justify-content: center;
+  }
+  body .mainSerigrafia .textos .parrafo {
+    font-family: "Source Serif Pro", serif;
+    font-size: x-large;
+    justify-content: center;
+  }
+  body .mainSerigrafia .titulos {
+    font-family: "Castoro Titling", cursive;
+    justify-content: center;
+  }
+  body .mainSerigrafia .parrafo {
+    font-family: "Source Serif Pro", serif;
+    font-size: x-large;
+    justify-content: center;
+  }
+  body .mainSerigrafia .seriTamaño {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10%;
+  }
+  body .mainSerigrafia .contenedorGaleria, body .mainSerigrafia .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainSerigrafia .contenedorGaleriados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+  }
+  body .mainSerigrafia .contenedorGaleria .ImgSeri, body .mainSerigrafia .mainTatuajes .contenedorGaleriados .ImgSeri, body .mainTatuajes .mainSerigrafia .contenedorGaleriados .ImgSeri {
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10%;
+    width: 200px;
+    height: 200px;
+  }
+}
+body {
   font-family: "Castoro Titling", cursive;
+  font-family: "Source Serif Pro", serif;
   background-color: white;
 }
 body .mainTatuajes .titulos__tamaño {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 body .mainTatuajes .contenedorGaleria, body .mainTatuajes .contenedorGaleriados {
   display: flex;
@@ -164,6 +331,20 @@ body .mainTatuajes .cardCuidados .cardCuidados__parrafo, body .mainTatuajes .car
   height: fit-content;
   text-align: center;
 }
+body .mainTatuajes .cardCuidados .cardCuidados__parrafo .titulo, body .mainTatuajes .cardCuidados .nohacer .titulo {
+  font-family: "Castoro Titling", cursive;
+}
+body .mainTatuajes .cardCuidados .cardCuidados__parrafo .parrafo, body .mainTatuajes .cardCuidados .nohacer .parrafo {
+  font-family: "Source Serif Pro", serif;
+  font-size: xx-large;
+}
+body .mainTatuajes .titulo {
+  font-family: "Castoro Titling", cursive;
+}
+body .mainTatuajes .parrafo {
+  font-family: "Source Serif Pro", serif;
+  font-size: xx-large;
+}
 body .mainTatuajes .titulotatu {
   display: flex;
   flex-direction: column;
@@ -184,10 +365,15 @@ body .mainTatuajes .listaItemolDos {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+body .mainTatuajes .listaItemolDos .listaItemliDos {
+  font-family: "Source Serif Pro", serif;
+  font-size: x-large;
+}
 body .mainTatuajes .nohacerTitulo {
   display: flex;
   justify-content: center;
   margin-top: 10%;
+  font-family: "Castoro Titling", cursive;
 }
 body .mainTatuajes .nohacer {
   width: 100%;
@@ -210,40 +396,193 @@ body .mainTatuajes .boxVideo .videoParrafo {
   width: 50%;
   height: fit-content;
   text-align: center;
-  font-size: large;
+  font-family: "Castoro Titling", cursive;
+  font-size: x-large;
   margin-top: 15%;
 }
 
-body .mainContacto {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    font-family: "Castoro Titling", cursive;
+    font-family: "Source Serif Pro", serif;
+    background-color: white;
+  }
+  body .mainTatuajes {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .mainTatuajes .titulos__tamaño {
+    width: 300px;
+    height: 300px;
+  }
+  body .mainTatuajes .contenedorGaleria, body .mainTatuajes .contenedorGaleriados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body .mainTatuajes .contenedorGaleria .ImgTatu, body .mainTatuajes .contenedorGaleriados .ImgTatu {
+    width: 250px;
+    height: 250px;
+    margin-top: 5%;
+    border: 1px black solid;
+    border-radius: 20px;
+  }
+  body .mainTatuajes .cardCuidados {
+    width: 95%;
+    margin-top: 15%;
+    margin-bottom: 2%;
+  }
+  body .mainTatuajes .cardCuidados .cardCuidados__parrafo, body .mainTatuajes .cardCuidados .nohacer {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  body .mainTatuajes .cardCuidados .cardCuidados__parrafo .titulo, body .mainTatuajes .cardCuidados .nohacer .titulo {
+    font-family: "Castoro Titling", cursive;
+  }
+  body .mainTatuajes .cardCuidados .cardCuidados__parrafo .parrafo, body .mainTatuajes .cardCuidados .nohacer .parrafo {
+    font-family: "Source Serif Pro", serif;
+    font-size: x-large;
+  }
+  body .mainTatuajes .sectionNohacer {
+    width: 99%;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 15%;
+  }
+  body .mainTatuajes .sectionNohacer .nohacerTitulo {
+    margin: 0%;
+    font-family: "Castoro Titling", cursive;
+    justify-content: center;
+    align-items: center;
+  }
+  body .mainTatuajes .listaItemolDos {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-items: center;
+  }
+  body .mainTatuajes .listaItemolDos .listaItemliDos {
+    align-items: center;
+    font-family: "Source Serif Pro", serif;
+    font-size: x-large;
+  }
+  body .mainTatuajes .contenedorGaleriados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  body .mainTatuajes .contenedorGaleriados .imgTatudos {
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin-top: 5%;
+  }
+  body .mainTatuajes .boxVideo {
+    text-align: center;
+    margin-top: 5%;
+  }
+  body .mainTatuajes .boxVideo .videoParrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    font-family: "Castoro Titling", cursive;
+    font-size: x-large;
+    margin-top: 15%;
+  }
+}
+body {
   font-family: "Castoro Titling", cursive;
+  font-family: "Source Serif Pro", serif;
   background-color: white;
 }
 body .mainContacto .titulos__tamaño {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
 }
 body .mainContacto .contenedorCentrar {
   margin-top: 5%;
 }
-body .mainContacto .sectionContacto {
+body .mainContacto .contenedorCentrar .titulo {
+  font-family: "Castoro Titling", cursive;
+  font-size: xx-large;
+}
+body .mainContacto .divContacto {
   background-image: url(../assets/img/hghghghg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .mainContacto .sectionContacto .boxForm {
+body .mainContacto .divContacto .boxForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 15%;
   margin-bottom: 5%;
 }
-body .mainContacto .sectionContacto .boxMap {
+body .mainContacto .divContacto .boxMap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    font-family: "Castoro Titling", cursive;
+    font-family: "Source Serif Pro", serif;
+    background-color: white;
+  }
+  body .mainContacto {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .mainContacto .titulos__tamaño {
+    width: 300px;
+    height: 300px;
+  }
+  body .mainContacto .contenedorCentrar {
+    margin: 0%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+  body .mainContacto .contenedorCentrar .titulo {
+    font-family: "Castoro Titling", cursive;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+  }
+  body .mainContacto .divContacto {
+    background-image: url(../assets/img/hghghghg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .mainContacto .divContacto .boxForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  body .mainContacto .divContacto .boxMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer {
+  font-family: "Castoro Titling", cursive;
+}
 footer .logo {
   margin-top: 2%;
   margin-bottom: 2%;

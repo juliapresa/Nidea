@@ -1,17 +1,21 @@
 body {
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Source Serif Pro', serif;
+    background-color: $backgroundcolor;
     .mainContacto {
-        font-family: $font;
-        background-color: $backgroundcolor;
-        
+    
         .titulos__tamaño {
-            @include sizes (600px,600px);
+            @include sizes (400px,400px);
         }
-
         .contenedorCentrar {
             margin-top: 5%;
+            .titulo{
+                font-family: $fonttitulo;
+                font-size: xx-large;
+            }
         }
 
-        .sectionContacto {
+        .divContacto {
             background-image: url(../assets/img/hghghghg.jpeg);
             background-position: center;
             background-repeat: no-repeat;
@@ -32,5 +36,53 @@ body {
             }
         }
 
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+        font-family: 'Castoro Titling', cursive;
+        font-family: 'Source Serif Pro', serif;
+        background-color: $backgroundcolor;
+        .mainContacto {
+            width: 100vw;
+            overflow-x: hidden;
+            .titulos__tamaño {
+                @include sizes (300px,300px);
+            }
+            .contenedorCentrar {
+                margin: 0%;
+                margin-top: 5%;
+               
+                display: flex;
+                justify-content: center;
+                .titulo{
+                    font-family: $fonttitulo;
+                    font-size: x-large;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .divContacto {
+                background-image: url(../assets/img/hghghghg.jpeg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+    
+                .boxForm {
+                    display: map-get($map: $flexelements, $key: flex);
+                    flex-direction: map-get($map: $flexelements, $key: column);
+                    align-items: center;
+                    margin-top: 15%;
+                    margin-bottom: 5%;
+                }
+    
+                .boxMap {
+                    display: map-get($map: $flexelements, $key: flex);
+                    flex-direction: map-get($map: $flexelements, $key: column);
+                    align-items: center;
+                }
+            }
+    
+        }
     }
 }

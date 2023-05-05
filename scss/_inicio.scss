@@ -1,13 +1,13 @@
 body {
     width: 100vw;
     overflow-x: hidden;
-
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Source Serif Pro', serif;
     .mainInicio {
-        font-family: $font;
         background-color: $backgroundcolor;
 
         .titulos__tamaño {
-            @include sizes (600px,600px);
+            @include sizes (400px,400px);
         }
 
         .contenedorSobremi {
@@ -20,10 +20,14 @@ body {
             margin-top: 15%;
 
             .contenedorSobremi__parrafo {
+                font-family:  $fonttextos;
+                font-size: xx-large;
                 @include sizes (50%,50%);
                 align-content: center;
-                font-size: larger;
                 margin-top: 2%;
+            }
+            .titulos{
+                font-family: $fonttitulo;
             }
         }
 
@@ -43,5 +47,50 @@ body {
             }
         }
 
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+        font-family: 'Castoro Titling', cursive;
+        font-family: 'Source Serif Pro', serif;
+        .mainInicio {
+            width: 100vw;
+            overflow-x: hidden;
+            background-color: $backgroundcolor;
+    
+            .titulos__tamaño {
+                @include sizes (300px,300px);
+            }
+    
+            .contenedorSobremi {
+                justify-content: center;
+                width: 95%;
+                padding: 0%;
+                margin: 0%;
+                    .titulos{
+                        font-family: $fonttitulo;
+                        justify-content: center;
+                    }
+                    .contenedorSobremi__parrafo{
+                        width: 95%;
+                        font-family: $fonttextos;
+                        font-size: x-large;  
+                        justify-content: center;
+                    }
+            }
+            
+             .contenedorGaleriaInicio {
+                display: map-get($map: $flexelements, $key: flex);
+                flex-wrap: wrap;
+                justify-content: center;
+    
+                .imgInicio {
+                    @include sizes (300px,300px);
+                    object-fit: cover;
+                    margin-top: 10px;
+                }
+            }
+    
+        }
     }
 }

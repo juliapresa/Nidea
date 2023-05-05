@@ -1,5 +1,5 @@
 header{
-    font-family: $font;
+    font-family: $fonttitulo;
     border: 1px, solid, black;
     position: sticky;
     top: 0;
@@ -9,4 +9,17 @@ header{
         margin-top: 2%;
         margin-bottom: 2%;
     }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+ header{
+    width: 100vw;
+    .contenedorLogo{
+        width: 90%;
+    }
+    
+    .contenedorNav{
+        width: 90%;
+    }
+ }   
 }

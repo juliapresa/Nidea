@@ -1,11 +1,10 @@
 body {
-
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Source Serif Pro', serif;
+    background-color: $backgroundcolor;
     .mainTatuajes {
-        font-family: $font;
-        background-color: $backgroundcolor;
-
         .titulos__tamaño {
-            @include sizes (600px, 600px);
+            @include sizes (400px, 400px);
         }
 
         .contenedorGaleria {
@@ -31,9 +30,22 @@ body {
                 align-items: center;
                 @include sizes (50%, fit-content);
                 text-align: center;
+                .titulo{
+                    font-family: $fonttitulo;
+                }
+                .parrafo{
+                    font-family: $fonttextos;
+                    font-size: xx-large;
+                }
             }
         }
-
+        .titulo{
+            font-family: $fonttitulo;
+        }
+        .parrafo{
+            font-family: $fonttextos;
+            font-size: xx-large;
+        }
         .titulotatu {
             display: map-get($map: $flexelements, $key: flex);
             flex-direction: map-get($map: $flexelements, $key: column);
@@ -56,12 +68,17 @@ body {
             width: 90%;
             margin-top: 2%;
             margin-bottom: 2%;
+            .listaItemliDos{
+                font-family: $fonttextos;
+                font-size: x-large;
+            }
         }
 
         .nohacerTitulo {
             display: map-get($map: $flexelements, $key: flex);
             justify-content: center;
-            margin-top: 10%
+            margin-top: 10%;
+            font-family: $fonttitulo;
         }
 
         .nohacer {
@@ -90,8 +107,114 @@ body {
                 align-items: center;
                 @include sizes (50%, fit-content);
                 text-align: center;
-                font-size: large;
+                font-family: $fonttitulo;
+                font-size: x-large;
                 margin-top: 15%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+        font-family: 'Castoro Titling', cursive;
+        font-family: 'Source Serif Pro', serif;
+        background-color: $backgroundcolor;
+        .mainTatuajes {
+            width: 100vw;
+            overflow-x: hidden;
+            .titulos__tamaño {
+                @include sizes (300px, 300px);
+            }
+    
+            .contenedorGaleria {
+                display: map-get($map: $flexelements, $key: flex);
+                flex-wrap: wrap;
+                justify-content: map-get($map: $flexelements, $key: space-evenly);
+    
+                .ImgTatu {
+                    @include sizes (250px, 250px);
+                    margin-top: 5%;
+                    border: 1px black solid;
+                    border-radius: 20px;
+                }
+            }
+    
+            .cardCuidados {
+                width: 95%;
+                margin-top: 15%;
+                margin-bottom: 2%;
+    
+                .cardCuidados__parrafo {
+                    width: 95%;
+                    display: map-get($map: $flexelements, $key: flex);
+                    flex-direction: map-get($map: $flexelements, $key: column);
+                    align-items: center;
+                    text-align: center;
+                    .titulo{
+                        font-family: $fonttitulo;
+                    }
+                    .parrafo{
+                        font-family: $fonttextos;
+                        font-size: x-large;
+                    }
+                }
+            }
+            .sectionNohacer{
+                width: 99%;
+                padding: 0%;
+                margin: 0%;
+                margin-top: 15%;
+                    .nohacerTitulo{
+                        margin: 0%;
+                        font-family: $fonttitulo;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+            }
+            .listaItemolDos {
+                padding: 0%;
+                display: map-get($map: $flexelements, $key: flex);
+                flex-direction: map-get($map: $flexelements, $key: column);
+                width: 95%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                align-items: center;
+                .listaItemliDos{
+                    align-items: center;
+                    font-family: $fonttextos;
+                    font-size: x-large;
+                }
+            }
+            
+            .contenedorGaleriados {
+                display: map-get($map: $flexelements, $key: flex);
+                flex-wrap: wrap;
+                justify-content: map-get($map: $flexelements, $key: space-evenly);
+    
+                .imgTatudos {
+                    @include sizes (300px, 300px);
+                    border: 1px black solid;
+                    border-radius: 20px;
+                    margin-top: 5%;
+                }
+            }
+    
+            .boxVideo {
+                text-align: center;
+                margin-top: 5%;
+    
+                .videoParrafo {
+                    display: map-get($map: $flexelements, $key: flex);
+                    flex-direction: map-get($map: $flexelements, $key: column);
+                    align-items: center;
+                    @include sizes (50%, fit-content);
+                    text-align: center;
+                    font-family: $fonttitulo;
+                    font-size: x-large;
+                    margin-top: 15%;
+                }
             }
         }
     }

@@ -1,38 +1,87 @@
 body {
-    font-family: $font;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Source Serif Pro', serif;
     background-color: $backgroundcolor;
         
     .mainIlustracion {
-        font-family: $font;
-        background-color: $backgroundcolor;
-
         .titulos__tamaño {
-            @include sizes (600px,600px);
+            @include sizes (400px,400px);
         }
-
-        .contenedorLogo {
-            margin-top: 2%;
-            margin-bottom: 2%;
+        .sectionIlu{
+            .textos {
+                justify-content: center;
+                width: 95%;
+                margin-top: 15%;
+                margin-bottom: 15%;
+                    .titulos{
+                        font-family: $fonttitulo;
+                        justify-content: center;
+                        
+                    }
+                    .parrafo{
+                        width: 95%;
+                        font-family: $fonttextos;
+                        font-size: x-large;  
+                        justify-content: center
+                    }
+            }
         }
-
-        .textos {
-            margin-top: 5%;
-            margin-bottom: 15%;
-            font-size: large;
-            width: 50%;
-        }
-
         .contenedorGaleria {
             display: map-get($map: $flexelements, $key: flex);
             flex-wrap: wrap;
             justify-content: map-get($map: $flexelements, $key: space-evenly);
 
             .ImgIlu {
-                @include sizes (400px,400px);
+                @include sizes (300px,300px);
                 object-fit: cover;
                 border: 1px black solid;
                 margin-top: 10px;
                 border-radius: 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body {
+        font-family: 'Castoro Titling', cursive;
+        font-family: 'Source Serif Pro', serif;
+        background-color: $backgroundcolor;
+        .mainIlustracion {
+            width: 100vw;
+            overflow-x: hidden;
+            .titulos__tamaño {
+                @include sizes (300px,300px);
+            }
+    
+            .contenedorLogo {
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+    
+            .textos {
+                margin-top: 5%;
+                margin-bottom: 15%;
+                width: 50%;
+                .titulos{
+                    font-family: $fonttitulo;
+                }
+                .parrafo{
+                    font-family: $fonttextos;
+                    font-size: xx-large;  
+                }
+            }
+            .contenedorGaleria {
+                display: map-get($map: $flexelements, $key: flex);
+                flex-wrap: wrap;
+                justify-content: map-get($map: $flexelements, $key: space-evenly);
+    
+                .ImgIlu {
+                    @include sizes (300px,300px);
+                    object-fit: cover;
+                    border: 1px black solid;
+                    margin-top: 10px;
+                    border-radius: 20px;
+                }
             }
         }
     }
