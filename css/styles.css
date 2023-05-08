@@ -19,17 +19,6 @@ header .contenedorLogo {
   margin-bottom: 2%;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  header {
-    width: 100vw;
-  }
-  header .contenedorLogo {
-    width: 90%;
-  }
-  header .contenedorNav {
-    width: 90%;
-  }
-}
 body {
   width: 100vw;
   overflow-x: hidden;
