@@ -6,9 +6,9 @@ body {
     
         .titulos__tamaño {
             @include sizes (400px,400px);
+            margin-bottom: 15%;
         }
         .contenedorCentrar {
-            margin-top: 5%;
             .titulo{
                 font-family: $fonttitulo;
                 font-size: xx-large;
@@ -48,13 +48,10 @@ body {
             overflow-x: hidden;
             .titulos__tamaño {
                 @include sizes (300px,300px);
+                margin-bottom: 30%;
             }
             .contenedorCentrar {
                 margin: 0%;
-                margin-top: 5%;
-               
-                display: flex;
-                justify-content: center;
                 .titulo{
                     font-family: $fonttitulo;
                     font-size: x-large;

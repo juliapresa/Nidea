@@ -8,6 +8,12 @@ body {
 
         .titulos__tamaño {
             @include sizes (400px,400px);
+            margin-bottom: 15%;
+        }
+
+        .carrusel{
+            height: fit-content;
+            margin-bottom: 15%;
         }
 
         .contenedorSobremi {
@@ -17,7 +23,6 @@ body {
             text-align: center;
             @include sizes (100%,fit-content);
             margin-bottom: 15%;
-            margin-top: 15%;
 
             .contenedorSobremi__parrafo {
                 font-family:  $fonttextos;
@@ -60,23 +65,32 @@ body {
     
             .titulos__tamaño {
                 @include sizes (300px,300px);
+                margin-bottom: 30%;
             }
-    
+            .carrusel{
+                margin-bottom: 30%;
+            }
             .contenedorSobremi {
                 justify-content: center;
                 width: 95%;
+                height: fit-content;
                 padding: 0%;
-                margin: 0%;
+                margin-bottom: 30%;
                     .titulos{
                         font-family: $fonttitulo;
                         justify-content: center;
                     }
                     .contenedorSobremi__parrafo{
                         width: 95%;
+                        height: fit-content;
                         font-family: $fonttextos;
                         font-size: x-large;  
                         justify-content: center;
                     }
+            }
+
+            .cards{
+                margin-bottom: 30%;
             }
             
              .contenedorGaleriaInicio {

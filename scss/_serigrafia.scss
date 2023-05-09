@@ -6,10 +6,10 @@ body {
 
         .titulos__tamaño {
             @include sizes (400px,400px);
+            margin-bottom: 15%;
         }
         
         .textos {
-            
             margin-bottom: 15%;
             width: 50%;
             margin-left: 10%;
@@ -52,11 +52,13 @@ body {
     
             .titulos__tamaño {
                 @include sizes (300px,300px);
+                margin-bottom: 30%;
             }
             
             .textos {
                 margin-left: 0%;
                 margin-right: 0%;
+                margin-bottom: 30%;
                 justify-content: center;
                 width: 95%;
                     .titulos{

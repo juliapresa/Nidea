@@ -6,20 +6,18 @@ body {
     .mainIlustracion {
         .titulos__tamaño {
             @include sizes (400px,400px);
+            margin-bottom: 15%;
         }
         .sectionIlu{
             .textos {
                 justify-content: center;
-                width: 95%;
-                margin-top: 15%;
+                width: 70%;
                 margin-bottom: 15%;
                     .titulos{
                         font-family: $fonttitulo;
                         justify-content: center;
-                        
                     }
                     .parrafo{
-                        width: 95%;
                         font-family: $fonttextos;
                         font-size: x-large;  
                         justify-content: center
@@ -32,7 +30,7 @@ body {
             justify-content: map-get($map: $flexelements, $key: space-evenly);
 
             .ImgIlu {
-                @include sizes (300px,300px);
+                @include sizes (400px,400px);
                 object-fit: cover;
                 border: 1px black solid;
                 margin-top: 10px;
@@ -49,25 +47,28 @@ body {
         .mainIlustracion {
             width: 100vw;
             overflow-x: hidden;
-            .titulos__tamaño {
-                @include sizes (300px,300px);
-            }
-    
             .contenedorLogo {
                 margin-top: 2%;
                 margin-bottom: 2%;
             }
-    
-            .textos {
-                margin-top: 5%;
-                margin-bottom: 15%;
-                width: 50%;
-                .titulos{
-                    font-family: $fonttitulo;
-                }
-                .parrafo{
-                    font-family: $fonttextos;
-                    font-size: xx-large;  
+
+            .titulos__tamaño {
+                @include sizes (300px,300px);
+                margin-bottom: 30%;
+            }
+            .sectionIlu{
+                .textos {
+                    margin-bottom: 30%;
+                    width: 95%;
+                    height: fit-content;
+                    .titulos{
+                        font-family: $fonttitulo;
+                        font-size: xx-large;
+                    }
+                    .parrafo{
+                        font-family: $fonttextos;
+                        font-size: xx-large;  
+                    }
                 }
             }
             .contenedorGaleria {
