@@ -21,18 +21,29 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
 
-            .boxForm {
-                display: map-get($map: $flexelements, $key: flex);
-                flex-direction: map-get($map: $flexelements, $key: column);
+            .formulario{
                 align-items: center;
-                margin-top: 15%;
-                margin-bottom: 5%;
+                .formularioContenido{
+                    width: 50%;
+                    font-family: $fonttitulo;
+                }
+                .button{
+                    background-color: white;
+                    border: 1px solid black;
+                    color: black;
+                    font-family: $fonttitulo;
+                }
             }
 
             .boxMap {
                 display: map-get($map: $flexelements, $key: flex);
                 flex-direction: map-get($map: $flexelements, $key: column);
                 align-items: center;
+                margin-top: 5%;
+                .mapa{
+                    width: 80%;
+                    height: 40vh;
+                }
             }
         }
 
@@ -64,19 +75,19 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-    
-                .boxForm {
-                    display: map-get($map: $flexelements, $key: flex);
-                    flex-direction: map-get($map: $flexelements, $key: column);
-                    align-items: center;
-                    margin-top: 15%;
-                    margin-bottom: 5%;
+                .formulario{
+                    .formularioContenido{
+                        width: 80%;
+                    }
                 }
-    
                 .boxMap {
                     display: map-get($map: $flexelements, $key: flex);
                     flex-direction: map-get($map: $flexelements, $key: column);
                     align-items: center;
+                    margin-top: 15%;
+                    width: 400;
+                    height: 200;
+                    
                 }
             }
     

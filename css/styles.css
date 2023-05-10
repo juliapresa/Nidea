@@ -15,8 +15,7 @@ header {
   background-color: white;
 }
 header .contenedorLogo {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
 body {
@@ -34,7 +33,6 @@ body .mainInicio .titulos__tamaño {
   margin-bottom: 15%;
 }
 body .mainInicio .carrusel {
-  height: fit-content;
   margin-bottom: 15%;
 }
 body .mainInicio .contenedorSobremi {
@@ -50,7 +48,7 @@ body .mainInicio .contenedorSobremi .contenedorSobremi__parrafo {
   font-family: "Source Serif Pro", serif;
   font-size: xx-large;
   width: 50%;
-  height: 50%;
+  height: 50vh;
   align-content: center;
   margin-top: 2%;
 }
@@ -522,17 +520,28 @@ body .mainContacto .divContacto {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body .mainContacto .divContacto .boxForm {
-  display: flex;
-  flex-direction: column;
+body .mainContacto .divContacto .formulario {
   align-items: center;
-  margin-top: 15%;
-  margin-bottom: 5%;
+}
+body .mainContacto .divContacto .formulario .formularioContenido {
+  width: 50%;
+  font-family: "Castoro Titling", cursive;
+}
+body .mainContacto .divContacto .formulario .button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-family: "Castoro Titling", cursive;
 }
 body .mainContacto .divContacto .boxMap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5%;
+}
+body .mainContacto .divContacto .boxMap .mapa {
+  width: 80%;
+  height: 40vh;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -565,17 +574,16 @@ body .mainContacto .divContacto .boxMap {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  body .mainContacto .divContacto .boxForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15%;
-    margin-bottom: 5%;
+  body .mainContacto .divContacto .formulario .formularioContenido {
+    width: 80%;
   }
   body .mainContacto .divContacto .boxMap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15%;
+    width: 400;
+    height: 200;
   }
 }
 footer {
@@ -590,6 +598,11 @@ footer .boxIcon__uno {
 }
 footer .boxIcon__uno .icon {
   color: #766e6e;
+}
+footer .boxIcon__uno .iconMid {
+  color: #766e6e;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 footer .boxIcon__dos {
   display: inline-block;
