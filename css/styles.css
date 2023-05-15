@@ -16,6 +16,14 @@ header {
 }
 header .contenedorLogo {
   margin-top: 1%;
+  height: fit-content;
+}
+header .contenedorLogo .imgLogo {
+  width: 140px;
+  height: 60px;
+}
+header .contenedorNav {
+  height: fit-content;
 }
 
 body {
@@ -34,6 +42,7 @@ body .mainInicio .titulos__tamaño {
 }
 body .mainInicio .carrusel {
   margin-bottom: 15%;
+  height: 100vh;
 }
 body .mainInicio .contenedorSobremi {
   display: flex;
@@ -57,6 +66,9 @@ body .mainInicio .contenedorSobremi .titulos {
 }
 body .mainInicio .cards {
   margin-bottom: 15%;
+}
+body .mainInicio .cards .card {
+  width: 18rem;
 }
 body .mainInicio .contenedorGaleriaInicio {
   display: flex;
@@ -90,7 +102,7 @@ body .mainInicio .contenedorGaleriaInicio .imgInicio {
   }
   body .mainInicio .contenedorSobremi {
     justify-content: center;
-    width: 95%;
+    width: 100%;
     height: fit-content;
     padding: 0%;
     margin-bottom: 30%;
@@ -185,11 +197,10 @@ body .mainIlustracion .contenedorGaleria .ImgIlu, body .mainIlustracion .mainTat
   }
   body .mainIlustracion .sectionIlu .textos .titulos {
     font-family: "Castoro Titling", cursive;
-    font-size: x-large;
   }
   body .mainIlustracion .sectionIlu .textos .parrafo {
     font-family: "Source Serif Pro", serif;
-    font-size: xx-large;
+    font-size: x-large;
   }
   body .mainIlustracion .contenedorGaleria, body .mainIlustracion .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainIlustracion .contenedorGaleriados {
     display: flex;
@@ -286,7 +297,7 @@ body .mainSerigrafia .contenedorGaleria .ImgSeri, body .mainSerigrafia .mainTatu
   body .mainSerigrafia .seriTamaño {
     width: 200px;
     height: 200px;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
   }
   body .mainSerigrafia .contenedorGaleria, body .mainSerigrafia .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainSerigrafia .contenedorGaleriados {
     display: flex;
@@ -297,7 +308,7 @@ body .mainSerigrafia .contenedorGaleria .ImgSeri, body .mainSerigrafia .mainTatu
   body .mainSerigrafia .contenedorGaleria .ImgSeri, body .mainSerigrafia .mainTatuajes .contenedorGaleriados .ImgSeri, body .mainTatuajes .mainSerigrafia .contenedorGaleriados .ImgSeri {
     object-fit: cover;
     margin-top: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     width: 200px;
     height: 200px;
   }
@@ -542,6 +553,7 @@ body .mainContacto .divContacto .boxMap {
 body .mainContacto .divContacto .boxMap .mapa {
   width: 80%;
   height: 40vh;
+  border: 0;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -589,9 +601,13 @@ body .mainContacto .divContacto .boxMap .mapa {
 footer {
   font-family: "Castoro Titling", cursive;
 }
-footer .logo {
-  margin-top: 2%;
-  margin-bottom: 2%;
+footer .contenedorLogo {
+  margin-top: 1%;
+  height: fit-content;
+}
+footer .contenedorLogo .imgLogo {
+  width: 140px;
+  height: 60px;
 }
 footer .boxIcon__uno {
   font-size: 3rem;

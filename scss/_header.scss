@@ -7,6 +7,14 @@ header{
     background-color: white;
     .contenedorLogo{
         margin-top: 1%;
+        height: fit-content;
+        .imgLogo{
+            width: 140px;
+            height: 60px;
+        }
+    }
+    .contenedorNav{
+        height: fit-content;
     }
 }
 

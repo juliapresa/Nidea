@@ -12,8 +12,8 @@ body {
         }
 
         .carrusel{
-            
             margin-bottom: 15%;
+            height: 100vh;
         }
 
         .contenedorSobremi {
@@ -38,6 +38,9 @@ body {
 
         .cards {
             margin-bottom: 15%;
+            .card{
+                width: 18rem;
+            }
         }
 
         .contenedorGaleriaInicio {
@@ -72,7 +75,7 @@ body {
             }
             .contenedorSobremi {
                 justify-content: center;
-                width: 95%;
+                width: 100%;
                 height: fit-content;
                 padding: 0%;
                 margin-bottom: 30%;

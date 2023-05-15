@@ -1,8 +1,12 @@
 footer{
     font-family: $fonttitulo;
-    .logo{
-        margin-top: 2%;
-        margin-bottom: 2%;
+    .contenedorLogo{
+        margin-top: 1%;
+        height: fit-content;
+        .imgLogo{
+            width: 140px;
+            height: 60px;
+        }
     }
     .boxIcon__uno{
         font-size: 3rem;
