@@ -297,7 +297,7 @@ body .mainSerigrafia .contenedorGaleria .ImgSeri, body .mainSerigrafia .mainTatu
   body .mainSerigrafia .seriTamaño {
     width: 200px;
     height: 200px;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
   }
   body .mainSerigrafia .contenedorGaleria, body .mainSerigrafia .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainSerigrafia .contenedorGaleriados {
     display: flex;
