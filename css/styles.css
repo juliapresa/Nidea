@@ -242,6 +242,7 @@ body .mainSerigrafia .textos .parrafo {
 body .mainSerigrafia .seriTamaño {
   width: 200px;
   height: 300px;
+  margin-top: 10%;
 }
 body .mainSerigrafia .contenedorGaleria, body .mainSerigrafia .mainTatuajes .contenedorGaleriados, body .mainTatuajes .mainSerigrafia .contenedorGaleriados {
   display: flex;
