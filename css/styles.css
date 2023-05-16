@@ -659,7 +659,6 @@ body .main404 .row .contenedorTexto .tituloError {
 body .main404 .row .contenedorTexto .textoError {
   font-family: "Source Serif Pro", serif;
   font-size: 50px;
-  margin-left: 15%;
 }
 body .main404 .row .imgError {
   display: flex;
@@ -684,24 +683,35 @@ body .main404 .row .imgError {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    padding: 0%;
+  }
+  body .main404 .row {
+    margin: 0%;
   }
   body .main404 .row .contenedorTexto {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0%;
+    width: 99%;
+    margin-top: 15%;
   }
   body .main404 .row .contenedorTexto .tituloError {
     font-family: "Castoro Titling", cursive;
     font-size: 50px;
-    margin-top: 15%;
   }
   body .main404 .row .contenedorTexto .textoError {
     font-family: "Source Serif Pro", serif;
     font-size: 30px;
-    margin-left: 15%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
   }
-  body .main404 .row .imgError {
+  body .main404 .row .contenedorImg {
+    padding: 0%;
+  }
+  body .main404 .row .contenedorImg .imgError {
     display: flex;
     justify-content: center;
     align-items: center;

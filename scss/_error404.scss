@@ -19,7 +19,6 @@ body{
             .textoError{
                 font-family: $fonttextos;
                 font-size: 50px;
-                margin-left: 15%;
             }
         }
         .imgError{
@@ -42,25 +41,34 @@ body{
             height: 100vh;
             width: 100vw;
             overflow-x: hidden;
+            padding: 0%;
         .row{
+            margin: 0%;
             .contenedorTexto{
                 @include flexbox (center,center,column);
+                padding: 0%;
+                width: 99%;
+                margin-top: 15%;
                 .tituloError{
                     font-family: $fonttitulo;
                     font-size: 50px;
-                    margin-top: 15%;
                 }
                 .textoError{
                     font-family: $fonttextos;
                     font-size: 30px;
-                    margin-left: 15%;
+                    margin: 0%;
+                    display: flex;
+                    align-items: center;
                 }
             }
-            .imgError{
-                @include flexbox (center,center,column);
-                @include sizes (300px,300px);
-                background-color: white;
-                margin-top: 15%;
+            .contenedorImg{
+                padding: 0%;
+                .imgError{
+                    @include flexbox (center,center,column);
+                    @include sizes (300px,300px);
+                    background-color: white;
+                    margin-top: 15%;
+                } 
             }
         }
     }
