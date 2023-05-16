@@ -3,7 +3,6 @@ body {
     font-family: 'Source Serif Pro', serif;
     background-color: $backgroundcolor;
     .mainContacto {
-    
         .titulos__tamaño {
             @include sizes (400px,400px);
             margin-bottom: 15%;

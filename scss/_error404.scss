@@ -1,0 +1,68 @@
+body{
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Source Serif Pro', serif;
+    background-color: $backgroundcolor;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    .main404{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    .row{
+        .contenedorTexto{
+            @include flexbox (center,center,column);
+            .tituloError{
+                font-family: $fonttitulo;
+                font-size: 70px;
+            }
+            .textoError{
+                font-family: $fonttextos;
+                font-size: 50px;
+                margin-left: 15%;
+            }
+        }
+        .imgError{
+            @include flexbox (center,center,column);
+            @include sizes (500px,500px);
+            background-color: white;
+        }
+    }
+}
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    body{
+        font-family: 'Castoro Titling', cursive;
+        font-family: 'Source Serif Pro', serif;
+        background-color: $backgroundcolor;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        .main404{
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        .row{
+            .contenedorTexto{
+                @include flexbox (center,center,column);
+                .tituloError{
+                    font-family: $fonttitulo;
+                    font-size: 50px;
+                    margin-top: 15%;
+                }
+                .textoError{
+                    font-family: $fonttextos;
+                    font-size: 30px;
+                    margin-left: 15%;
+                }
+            }
+            .imgError{
+                @include flexbox (center,center,column);
+                @include sizes (300px,300px);
+                background-color: white;
+                margin-top: 15%;
+            }
+        }
+    }
+    }
+}

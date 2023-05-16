@@ -633,4 +633,84 @@ footer .boxIcon__dos .iconDos {
   display: inline-block;
 }
 
+body {
+  font-family: "Castoro Titling", cursive;
+  font-family: "Source Serif Pro", serif;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+body .main404 {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+body .main404 .row .contenedorTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .main404 .row .contenedorTexto .tituloError {
+  font-family: "Castoro Titling", cursive;
+  font-size: 70px;
+}
+body .main404 .row .contenedorTexto .textoError {
+  font-family: "Source Serif Pro", serif;
+  font-size: 50px;
+  margin-left: 15%;
+}
+body .main404 .row .imgError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    font-family: "Castoro Titling", cursive;
+    font-family: "Source Serif Pro", serif;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .main404 {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .main404 .row .contenedorTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .main404 .row .contenedorTexto .tituloError {
+    font-family: "Castoro Titling", cursive;
+    font-size: 50px;
+    margin-top: 15%;
+  }
+  body .main404 .row .contenedorTexto .textoError {
+    font-family: "Source Serif Pro", serif;
+    font-size: 30px;
+    margin-left: 15%;
+  }
+  body .main404 .row .imgError {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-top: 15%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

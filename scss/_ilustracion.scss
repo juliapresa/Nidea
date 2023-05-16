@@ -2,7 +2,6 @@ body {
     font-family: 'Castoro Titling', cursive;
     font-family: 'Source Serif Pro', serif;
     background-color: $backgroundcolor;
-        
     .mainIlustracion {
         .titulos__tamaño {
             @include sizes (400px,400px);
