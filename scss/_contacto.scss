@@ -12,13 +12,14 @@ body {
                 font-family: $fonttitulo;
                 font-size: x-large;
                 margin-bottom: 5%;
+                
             }
         }
         .divContacto {
-                background-image: url(../assets/img/fondocontacto.jpeg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+            background-image: url(../assets/img/fondocontacto.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             .formulario{
                 align-items: center;
                 .formularioContenido{
@@ -70,10 +71,6 @@ body {
                 }
             }
             .divContacto {
-                background-image: url(../assets/img/hghghghg.jpeg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
                 .formulario{
                     .formularioContenido{
                         width: 80%;
@@ -86,7 +83,6 @@ body {
                     margin-top: 15%;
                     width: 400;
                     height: 200;
-                    
                 }
             }
     

@@ -40,6 +40,21 @@ body {
             margin-bottom: 15%;
             .card{
                 width: 18rem;
+                .cardImg{
+                    @include sizes (100%,75%);
+                }
+                .cardTitle{
+                    font-family: $fonttitulo;
+                }
+                .cardBody{
+                    text-decoration: none;
+                    color: black;
+                    font-size: medium;
+                }
+                .cardBody:hover{
+                    color: violet;
+                }
+                
             }
         }
 

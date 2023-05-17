@@ -50,6 +50,21 @@ body .mainInicio .cards {
 body .mainInicio .cards .card {
   width: 18rem;
 }
+body .mainInicio .cards .card .cardImg {
+  width: 100%;
+  height: 75%;
+}
+body .mainInicio .cards .card .cardTitle {
+  font-family: "Castoro Titling", cursive;
+}
+body .mainInicio .cards .card .cardBody {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+body .mainInicio .cards .card .cardBody:hover {
+  color: violet;
+}
 body .mainInicio .contenedorGaleriaInicio {
   display: flex;
   flex-wrap: wrap;
@@ -561,12 +576,6 @@ body .mainContacto .divContacto .boxMap .mapa {
     font-size: x-large;
     display: flex;
     justify-content: center;
-  }
-  body .mainContacto .divContacto {
-    background-image: url(../assets/img/hghghghg.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   body .mainContacto .divContacto .formulario .formularioContenido {
     width: 80%;
