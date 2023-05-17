@@ -6,26 +6,6 @@
   box-sizing: border-box;
 }
 
-header {
-  font-family: "Castoro Titling", cursive;
-  border: 1px, solid, black;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: white;
-}
-header .contenedorLogo {
-  margin-top: 1%;
-  height: fit-content;
-}
-header .contenedorLogo .imgLogo {
-  width: 140px;
-  height: 60px;
-}
-header .contenedorNav {
-  height: fit-content;
-}
-
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -524,10 +504,11 @@ body .mainContacto .titulos__tamaño {
 }
 body .mainContacto .contenedorCentrar .titulo {
   font-family: "Castoro Titling", cursive;
-  font-size: xx-large;
+  font-size: x-large;
+  margin-bottom: 5%;
 }
 body .mainContacto .divContacto {
-  background-image: url(../assets/img/hghghghg.jpeg);
+  background-image: url(../assets/img/fondocontacto.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -599,40 +580,6 @@ body .mainContacto .divContacto .boxMap .mapa {
     height: 200;
   }
 }
-footer {
-  font-family: "Castoro Titling", cursive;
-}
-footer .contenedorLogo {
-  margin-top: 1%;
-  height: fit-content;
-}
-footer .contenedorLogo .imgLogo {
-  width: 140px;
-  height: 60px;
-}
-footer .boxIcon__uno {
-  font-size: 3rem;
-}
-footer .boxIcon__uno .icon {
-  color: #766e6e;
-}
-footer .boxIcon__uno .iconMid {
-  color: #766e6e;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-footer .boxIcon__dos {
-  display: inline-block;
-  position: fixed;
-  right: 0%;
-  bottom: 0%;
-}
-footer .boxIcon__dos .iconDos {
-  font-size: 3rem;
-  color: #367240;
-  display: inline-block;
-}
-
 body {
   font-family: "Castoro Titling", cursive;
   font-family: "Source Serif Pro", serif;
@@ -721,6 +668,59 @@ body .main404 .row .imgError {
     background-color: white;
     margin-top: 15%;
   }
+}
+header {
+  font-family: "Castoro Titling", cursive;
+  border: 1px, solid, black;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+header .contenedorLogo {
+  margin-top: 1%;
+  height: fit-content;
+}
+header .contenedorLogo .imgLogo {
+  width: 140px;
+  height: 60px;
+}
+header .contenedorNav {
+  height: fit-content;
+}
+
+footer {
+  font-family: "Castoro Titling", cursive;
+}
+footer .contenedorLogo {
+  margin-top: 1%;
+  height: fit-content;
+}
+footer .contenedorLogo .imgLogo {
+  width: 140px;
+  height: 60px;
+}
+footer .boxIcon__uno {
+  font-size: 3rem;
+}
+footer .boxIcon__uno .icon {
+  color: #766e6e;
+}
+footer .boxIcon__uno .iconMid {
+  color: #766e6e;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+footer .boxIcon__dos {
+  display: inline-block;
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+}
+footer .boxIcon__dos .iconDos {
+  font-size: 3rem;
+  color: #367240;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=styles.css.map */
