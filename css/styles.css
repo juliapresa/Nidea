@@ -22,7 +22,10 @@ body .mainInicio .titulos__tamaño {
 }
 body .mainInicio .carrusel {
   margin-bottom: 15%;
-  height: 100vh;
+  height: 80vh;
+}
+body .mainInicio .carrusel .carruselImg {
+  height: 80vh;
 }
 body .mainInicio .contenedorSobremi {
   display: flex;
@@ -94,6 +97,10 @@ body .mainInicio .contenedorGaleriaInicio .imgInicio {
   }
   body .mainInicio .carrusel {
     margin-bottom: 30%;
+    height: 30vh;
+  }
+  body .mainInicio .carrusel .carruselImg {
+    height: fit-content;
   }
   body .mainInicio .contenedorSobremi {
     justify-content: center;
@@ -725,6 +732,7 @@ footer .boxIcon__dos {
   position: fixed;
   right: 0%;
   bottom: 0%;
+  margin-right: 1%;
 }
 footer .boxIcon__dos .iconDos {
   font-size: 3rem;
